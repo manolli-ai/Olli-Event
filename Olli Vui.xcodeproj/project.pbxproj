@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABB1FDFD5E50024400C /* AppDelegate.swift */; };
+		B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABD1FDFD5E50024400C /* ViewController.swift */; };
+		B179DAC11FDFD5E50024400C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B179DABF1FDFD5E50024400C /* Main.storyboard */; };
+		B179DAC41FDFD5E50024400C /* Olli_Vui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B179DAC21FDFD5E50024400C /* Olli_Vui.xcdatamodeld */; };
+		B179DAC61FDFD5E50024400C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B179DAC51FDFD5E50024400C /* Assets.xcassets */; };
+		B179DAC91FDFD5E50024400C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */; };
+		B179DAD41FDFD5E50024400C /* Olli_VuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DAD31FDFD5E50024400C /* Olli_VuiTests.swift */; };
+		B179DADF1FDFD5E50024400C /* Olli_VuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B179DAD01FDFD5E50024400C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B179DAB01FDFD5E50024400C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B179DAB71FDFD5E50024400C;
+			remoteInfo = "Olli Vui";
+		};
+		B179DADB1FDFD5E50024400C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B179DAB01FDFD5E50024400C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B179DAB71FDFD5E50024400C;
+			remoteInfo = "Olli Vui";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B179DAB81FDFD5E50024400C /* Olli Vui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olli Vui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B179DABB1FDFD5E50024400C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B179DABD1FDFD5E50024400C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B179DAC01FDFD5E50024400C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B179DAC31FDFD5E50024400C /* Olli_Vui.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Olli_Vui.xcdatamodel; sourceTree = "<group>"; };
+		B179DAC51FDFD5E50024400C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B179DAC81FDFD5E50024400C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B179DACA1FDFD5E50024400C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B179DACF1FDFD5E50024400C /* Olli VuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olli VuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B179DAD31FDFD5E50024400C /* Olli_VuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olli_VuiTests.swift; sourceTree = "<group>"; };
+		B179DAD51FDFD5E50024400C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B179DADA1FDFD5E50024400C /* Olli VuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olli VuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olli_VuiUITests.swift; sourceTree = "<group>"; };
+		B179DAE01FDFD5E50024400C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B179DAB51FDFD5E50024400C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DACC1FDFD5E50024400C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DAD71FDFD5E50024400C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B179DAAF1FDFD5E50024400C = {
+			isa = PBXGroup;
+			children = (
+				B179DABA1FDFD5E50024400C /* Olli Vui */,
+				B179DAD21FDFD5E50024400C /* Olli VuiTests */,
+				B179DADD1FDFD5E50024400C /* Olli VuiUITests */,
+				B179DAB91FDFD5E50024400C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B179DAB91FDFD5E50024400C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B179DAB81FDFD5E50024400C /* Olli Vui.app */,
+				B179DACF1FDFD5E50024400C /* Olli VuiTests.xctest */,
+				B179DADA1FDFD5E50024400C /* Olli VuiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B179DABA1FDFD5E50024400C /* Olli Vui */ = {
+			isa = PBXGroup;
+			children = (
+				B179DABB1FDFD5E50024400C /* AppDelegate.swift */,
+				B179DABD1FDFD5E50024400C /* ViewController.swift */,
+				B179DABF1FDFD5E50024400C /* Main.storyboard */,
+				B179DAC51FDFD5E50024400C /* Assets.xcassets */,
+				B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */,
+				B179DACA1FDFD5E50024400C /* Info.plist */,
+				B179DAC21FDFD5E50024400C /* Olli_Vui.xcdatamodeld */,
+			);
+			path = "Olli Vui";
+			sourceTree = "<group>";
+		};
+		B179DAD21FDFD5E50024400C /* Olli VuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				B179DAD31FDFD5E50024400C /* Olli_VuiTests.swift */,
+				B179DAD51FDFD5E50024400C /* Info.plist */,
+			);
+			path = "Olli VuiTests";
+			sourceTree = "<group>";
+		};
+		B179DADD1FDFD5E50024400C /* Olli VuiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */,
+				B179DAE01FDFD5E50024400C /* Info.plist */,
+			);
+			path = "Olli VuiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B179DAB71FDFD5E50024400C /* Olli Vui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B179DAE31FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli Vui" */;
+			buildPhases = (
+				B179DAB41FDFD5E50024400C /* Sources */,
+				B179DAB51FDFD5E50024400C /* Frameworks */,
+				B179DAB61FDFD5E50024400C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Olli Vui";
+			productName = "Olli Vui";
+			productReference = B179DAB81FDFD5E50024400C /* Olli Vui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B179DACE1FDFD5E50024400C /* Olli VuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B179DAE61FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiTests" */;
+			buildPhases = (
+				B179DACB1FDFD5E50024400C /* Sources */,
+				B179DACC1FDFD5E50024400C /* Frameworks */,
+				B179DACD1FDFD5E50024400C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B179DAD11FDFD5E50024400C /* PBXTargetDependency */,
+			);
+			name = "Olli VuiTests";
+			productName = "Olli VuiTests";
+			productReference = B179DACF1FDFD5E50024400C /* Olli VuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B179DAD91FDFD5E50024400C /* Olli VuiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B179DAE91FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiUITests" */;
+			buildPhases = (
+				B179DAD61FDFD5E50024400C /* Sources */,
+				B179DAD71FDFD5E50024400C /* Frameworks */,
+				B179DAD81FDFD5E50024400C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B179DADC1FDFD5E50024400C /* PBXTargetDependency */,
+			);
+			name = "Olli VuiUITests";
+			productName = "Olli VuiUITests";
+			productReference = B179DADA1FDFD5E50024400C /* Olli VuiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B179DAB01FDFD5E50024400C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Man Huynh";
+				TargetAttributes = {
+					B179DAB71FDFD5E50024400C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B179DACE1FDFD5E50024400C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B179DAB71FDFD5E50024400C;
+					};
+					B179DAD91FDFD5E50024400C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B179DAB71FDFD5E50024400C;
+					};
+				};
+			};
+			buildConfigurationList = B179DAB31FDFD5E50024400C /* Build configuration list for PBXProject "Olli Vui" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B179DAAF1FDFD5E50024400C;
+			productRefGroup = B179DAB91FDFD5E50024400C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B179DAB71FDFD5E50024400C /* Olli Vui */,
+				B179DACE1FDFD5E50024400C /* Olli VuiTests */,
+				B179DAD91FDFD5E50024400C /* Olli VuiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B179DAB61FDFD5E50024400C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B179DAC91FDFD5E50024400C /* LaunchScreen.storyboard in Resources */,
+				B179DAC61FDFD5E50024400C /* Assets.xcassets in Resources */,
+				B179DAC11FDFD5E50024400C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DACD1FDFD5E50024400C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DAD81FDFD5E50024400C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B179DAB41FDFD5E50024400C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */,
+				B179DAC41FDFD5E50024400C /* Olli_Vui.xcdatamodeld in Sources */,
+				B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DACB1FDFD5E50024400C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B179DAD41FDFD5E50024400C /* Olli_VuiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B179DAD61FDFD5E50024400C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B179DADF1FDFD5E50024400C /* Olli_VuiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B179DAD11FDFD5E50024400C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B179DAB71FDFD5E50024400C /* Olli Vui */;
+			targetProxy = B179DAD01FDFD5E50024400C /* PBXContainerItemProxy */;
+		};
+		B179DADC1FDFD5E50024400C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B179DAB71FDFD5E50024400C /* Olli Vui */;
+			targetProxy = B179DADB1FDFD5E50024400C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B179DABF1FDFD5E50024400C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B179DAC01FDFD5E50024400C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B179DAC81FDFD5E50024400C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B179DAE11FDFD5E50024400C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B179DAE21FDFD5E50024400C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B179DAE41FDFD5E50024400C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli Vui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B179DAE51FDFD5E50024400C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli Vui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B179DAE71FDFD5E50024400C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli VuiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-VuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olli Vui.app/Olli Vui";
+			};
+			name = Debug;
+		};
+		B179DAE81FDFD5E50024400C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli VuiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-VuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olli Vui.app/Olli Vui";
+			};
+			name = Release;
+		};
+		B179DAEA1FDFD5E50024400C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli VuiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-VuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Olli Vui";
+			};
+			name = Debug;
+		};
+		B179DAEB1FDFD5E50024400C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				INFOPLIST_FILE = "Olli VuiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-VuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Olli Vui";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B179DAB31FDFD5E50024400C /* Build configuration list for PBXProject "Olli Vui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B179DAE11FDFD5E50024400C /* Debug */,
+				B179DAE21FDFD5E50024400C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B179DAE31FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli Vui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B179DAE41FDFD5E50024400C /* Debug */,
+				B179DAE51FDFD5E50024400C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B179DAE61FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B179DAE71FDFD5E50024400C /* Debug */,
+				B179DAE81FDFD5E50024400C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B179DAE91FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B179DAEA1FDFD5E50024400C /* Debug */,
+				B179DAEB1FDFD5E50024400C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B179DAC21FDFD5E50024400C /* Olli_Vui.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B179DAC31FDFD5E50024400C /* Olli_Vui.xcdatamodel */,
+			);
+			currentVersion = B179DAC31FDFD5E50024400C /* Olli_Vui.xcdatamodel */;
+			path = Olli_Vui.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B179DAB01FDFD5E50024400C /* Project object */;
+}
