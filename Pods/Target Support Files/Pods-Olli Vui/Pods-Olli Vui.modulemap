@@ -1,0 +1,6 @@
+framework module Pods_Olli_Vui {
+  umbrella header "Pods-Olli Vui-umbrella.h"
+
+  export *
+  module * { export * }
+}

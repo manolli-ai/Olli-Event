@@ -1,0 +1,6 @@
+framework module Pods_Olli_VuiTests {
+  umbrella header "Pods-Olli VuiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

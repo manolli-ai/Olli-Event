@@ -7,6 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4404CF151F1F0EC62DEDE983 /* Pods_Olli_Vui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49145DDF8C04B93E8E83D526 /* Pods_Olli_Vui.framework */; };
+		5A14291B7A5A36C1AC6F783B /* Pods_Olli_VuiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DB177FBC4EE1F2104DC6D7 /* Pods_Olli_VuiUITests.framework */; };
+		614B2B60200BBD7500DE369E /* ServicesConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B2B5F200BBD7500DE369E /* ServicesConstant.swift */; };
+		B107B0F11FFDCFF70012029D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B0EF1FFDCFF70012029D /* LoginViewController.swift */; };
+		B107B0F21FFDCFF70012029D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F01FFDCFF70012029D /* LoginViewController.xib */; };
+		B107B0F91FFDD1900012029D /* User icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F31FFDD18F0012029D /* User icon.png */; };
+		B107B0FA1FFDD1900012029D /* Password icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F41FFDD18F0012029D /* Password icon.png */; };
+		B107B0FB1FFDD1900012029D /* Forma 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F51FFDD18F0012029D /* Forma 1.png */; };
+		B107B0FC1FFDD1900012029D /* FB Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F61FFDD1900012029D /* FB Logo.png */; };
+		B107B0FD1FFDD1900012029D /* Google logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F71FFDD1900012029D /* Google logo.png */; };
+		B107B0FE1FFDD1900012029D /* Tab point.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0F81FFDD1900012029D /* Tab point.png */; };
+		B107B1011FFE38B80012029D /* Facebook button.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B0FF1FFE38B70012029D /* Facebook button.png */; };
+		B107B1021FFE38B80012029D /* Google button.png in Resources */ = {isa = PBXBuildFile; fileRef = B107B1001FFE38B70012029D /* Google button.png */; };
+		B107B1051FFF879E0012029D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B1041FFF879E0012029D /* Services.swift */; };
+		B107B10720031D8F0012029D /* LoginMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B10620031D8F0012029D /* LoginMD.swift */; };
+		B107B109200323880012029D /* AccountMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B108200323880012029D /* AccountMD.swift */; };
+		B1159E331FFB41BD00804A59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */; };
+		B1159E3A1FFCB72F00804A59 /* Mascot.png in Resources */ = {isa = PBXBuildFile; fileRef = B1159E381FFCB72F00804A59 /* Mascot.png */; };
+		B1159E3B1FFCB72F00804A59 /* Wave.png in Resources */ = {isa = PBXBuildFile; fileRef = B1159E391FFCB72F00804A59 /* Wave.png */; };
+		B125351E200717D5000B6E66 /* GameMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125351D200717D5000B6E66 /* GameMD.swift */; };
+		B125352220074191000B6E66 /* GlowingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125352120074191000B6E66 /* GlowingLabel.swift */; };
+		B125353320075DE4000B6E66 /* Back btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352320075DE2000B6E66 /* Back btn@2x.png */; };
+		B125353420075DE4000B6E66 /* Retry btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352420075DE3000B6E66 /* Retry btn@2x.png */; };
+		B125353520075DE4000B6E66 /* Gift box@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352520075DE3000B6E66 /* Gift box@2x.svg */; };
+		B125353620075DE4000B6E66 /* User icon@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352620075DE3000B6E66 /* User icon@2x.svg */; };
+		B125353720075DE4000B6E66 /* Pause btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352720075DE3000B6E66 /* Pause btn@2x.png */; };
+		B125353820075DE4000B6E66 /* Retry btn@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352820075DE3000B6E66 /* Retry btn@2x.svg */; };
+		B125353920075DE4000B6E66 /* Menu icon@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352920075DE3000B6E66 /* Menu icon@2x.svg */; };
+		B125353A20075DE4000B6E66 /* Next btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352A20075DE3000B6E66 /* Next btn@2x.png */; };
+		B125353B20075DE4000B6E66 /* Pause btn@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352B20075DE4000B6E66 /* Pause btn@2x.svg */; };
+		B125353C20075DE4000B6E66 /* Gift box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352C20075DE4000B6E66 /* Gift box@2x.png */; };
+		B125353D20075DE4000B6E66 /* Star@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125352D20075DE4000B6E66 /* Star@2x.svg */; };
+		B125353E20075DE4000B6E66 /* Star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352E20075DE4000B6E66 /* Star@2x.png */; };
+		B125353F20075DE4000B6E66 /* Menu icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352F20075DE4000B6E66 /* Menu icon@2x.png */; };
+		B125354020075DE4000B6E66 /* Next btn@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125353020075DE4000B6E66 /* Next btn@2x.svg */; };
+		B125354120075DE4000B6E66 /* User icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125353120075DE4000B6E66 /* User icon@2x.png */; };
+		B125354220075DE4000B6E66 /* Back btn@2x.svg in Resources */ = {isa = PBXBuildFile; fileRef = B125353220075DE4000B6E66 /* Back btn@2x.svg */; };
+		B12535452008B7A7000B6E66 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12535432008B7A7000B6E66 /* HelpViewController.swift */; };
+		B12535462008B7A7000B6E66 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12535442008B7A7000B6E66 /* HelpViewController.xib */; };
+		B1254FD21FE0DD64008533BB /* MainSceenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1254FD01FE0DD64008533BB /* MainSceenCollectionViewCell.swift */; };
+		B1254FD31FE0DD64008533BB /* MainSceenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1254FD11FE0DD64008533BB /* MainSceenCollectionViewCell.xib */; };
+		B1254FD71FE1114C008533BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1254FD51FE1114C008533BB /* GameViewController.swift */; };
+		B1254FD81FE1114C008533BB /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1254FD61FE1114C008533BB /* GameViewController.xib */; };
+		B14E7960200EF68400AD266A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E795F200EF68400AD266A /* Users.swift */; };
+		B156060B1FE25CBE00B41728 /* RewardStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15606091FE25CBE00B41728 /* RewardStoreViewController.swift */; };
+		B156060C1FE25CBE00B41728 /* RewardStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B156060A1FE25CBE00B41728 /* RewardStoreViewController.xib */; };
+		B156060F1FE2600900B41728 /* RewardStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */; };
+		B15606101FE2600900B41728 /* RewardStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */; };
+		B17701472011A850001DC883 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17701462011A850001DC883 /* Records.swift */; };
 		B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABB1FDFD5E50024400C /* AppDelegate.swift */; };
 		B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABD1FDFD5E50024400C /* ViewController.swift */; };
 		B179DAC11FDFD5E50024400C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B179DABF1FDFD5E50024400C /* Main.storyboard */; };
@@ -15,6 +64,8 @@
 		B179DAC91FDFD5E50024400C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */; };
 		B179DAD41FDFD5E50024400C /* Olli_VuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DAD31FDFD5E50024400C /* Olli_VuiTests.swift */; };
 		B179DADF1FDFD5E50024400C /* Olli_VuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */; };
+		B179DAF11FDFE04F0024400C /* MainScreenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */; };
+		DD121E50238D6F0D7E43FA91 /* Pods_Olli_VuiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDC49729D8D19784D28CBBF /* Pods_Olli_VuiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +86,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19463894CAF2CB6F39A46681 /* Pods-Olli VuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49145DDF8C04B93E8E83D526 /* Pods_Olli_Vui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_Vui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DB177FBC4EE1F2104DC6D7 /* Pods_Olli_VuiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_VuiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614B2B5F200BBD7500DE369E /* ServicesConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesConstant.swift; sourceTree = "<group>"; };
+		8FDC49729D8D19784D28CBBF /* Pods_Olli_VuiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_VuiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4DE91324B2AA8F49FB3DA /* Pods-Olli Vui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli Vui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui.debug.xcconfig"; sourceTree = "<group>"; };
+		9A59E62863AC91F48BF28E15 /* Pods-Olli VuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B107B0EF1FFDCFF70012029D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B107B0F01FFDCFF70012029D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B107B0F31FFDD18F0012029D /* User icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User icon.png"; sourceTree = "<group>"; };
+		B107B0F41FFDD18F0012029D /* Password icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Password icon.png"; sourceTree = "<group>"; };
+		B107B0F51FFDD18F0012029D /* Forma 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forma 1.png"; sourceTree = "<group>"; };
+		B107B0F61FFDD1900012029D /* FB Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB Logo.png"; sourceTree = "<group>"; };
+		B107B0F71FFDD1900012029D /* Google logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Google logo.png"; sourceTree = "<group>"; };
+		B107B0F81FFDD1900012029D /* Tab point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tab point.png"; sourceTree = "<group>"; };
+		B107B0FF1FFE38B70012029D /* Facebook button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook button.png"; sourceTree = "<group>"; };
+		B107B1001FFE38B70012029D /* Google button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Google button.png"; sourceTree = "<group>"; };
+		B107B1041FFF879E0012029D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		B107B10620031D8F0012029D /* LoginMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMD.swift; sourceTree = "<group>"; };
+		B107B108200323880012029D /* AccountMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMD.swift; sourceTree = "<group>"; };
+		B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1159E341FFB43A900804A59 /* Olli Vui-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Olli Vui-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1159E371FFB761500804A59 /* Olli Vui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Olli Vui.entitlements"; sourceTree = "<group>"; };
+		B1159E381FFCB72F00804A59 /* Mascot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mascot.png; sourceTree = "<group>"; };
+		B1159E391FFCB72F00804A59 /* Wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wave.png; sourceTree = "<group>"; };
+		B125351D200717D5000B6E66 /* GameMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMD.swift; sourceTree = "<group>"; };
+		B125352120074191000B6E66 /* GlowingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingLabel.swift; sourceTree = "<group>"; };
+		B125352320075DE2000B6E66 /* Back btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back btn@2x.png"; sourceTree = "<group>"; };
+		B125352420075DE3000B6E66 /* Retry btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry btn@2x.png"; sourceTree = "<group>"; };
+		B125352520075DE3000B6E66 /* Gift box@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Gift box@2x.svg"; sourceTree = "<group>"; };
+		B125352620075DE3000B6E66 /* User icon@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "User icon@2x.svg"; sourceTree = "<group>"; };
+		B125352720075DE3000B6E66 /* Pause btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause btn@2x.png"; sourceTree = "<group>"; };
+		B125352820075DE3000B6E66 /* Retry btn@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Retry btn@2x.svg"; sourceTree = "<group>"; };
+		B125352920075DE3000B6E66 /* Menu icon@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Menu icon@2x.svg"; sourceTree = "<group>"; };
+		B125352A20075DE3000B6E66 /* Next btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next btn@2x.png"; sourceTree = "<group>"; };
+		B125352B20075DE4000B6E66 /* Pause btn@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pause btn@2x.svg"; sourceTree = "<group>"; };
+		B125352C20075DE4000B6E66 /* Gift box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gift box@2x.png"; sourceTree = "<group>"; };
+		B125352D20075DE4000B6E66 /* Star@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Star@2x.svg"; sourceTree = "<group>"; };
+		B125352E20075DE4000B6E66 /* Star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star@2x.png"; sourceTree = "<group>"; };
+		B125352F20075DE4000B6E66 /* Menu icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu icon@2x.png"; sourceTree = "<group>"; };
+		B125353020075DE4000B6E66 /* Next btn@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Next btn@2x.svg"; sourceTree = "<group>"; };
+		B125353120075DE4000B6E66 /* User icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User icon@2x.png"; sourceTree = "<group>"; };
+		B125353220075DE4000B6E66 /* Back btn@2x.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Back btn@2x.svg"; sourceTree = "<group>"; };
+		B12535432008B7A7000B6E66 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		B12535442008B7A7000B6E66 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		B1254FD01FE0DD64008533BB /* MainSceenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceenCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1254FD11FE0DD64008533BB /* MainSceenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSceenCollectionViewCell.xib; sourceTree = "<group>"; };
+		B1254FD51FE1114C008533BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B1254FD61FE1114C008533BB /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		B14E795F200EF68400AD266A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B15606091FE25CBE00B41728 /* RewardStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreViewController.swift; sourceTree = "<group>"; };
+		B156060A1FE25CBE00B41728 /* RewardStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardStoreViewController.xib; sourceTree = "<group>"; };
+		B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreTableViewCell.swift; sourceTree = "<group>"; };
+		B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardStoreTableViewCell.xib; sourceTree = "<group>"; };
+		B17701462011A850001DC883 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		B179DAB81FDFD5E50024400C /* Olli Vui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olli Vui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DABB1FDFD5E50024400C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B179DABD1FDFD5E50024400C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +155,10 @@
 		B179DADA1FDFD5E50024400C /* Olli VuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olli VuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olli_VuiUITests.swift; sourceTree = "<group>"; };
 		B179DAE01FDFD5E50024400C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCollectionViewController.swift; sourceTree = "<group>"; };
+		BCF77AEE68842578CBC5D64B /* Pods-Olli Vui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli Vui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui.release.xcconfig"; sourceTree = "<group>"; };
+		CF731AAC86FBC0763786F8A9 /* Pods-Olli VuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE8E34B37F7CF5978CB69C0F /* Pods-Olli VuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4404CF151F1F0EC62DEDE983 /* Pods_Olli_Vui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD121E50238D6F0D7E43FA91 /* Pods_Olli_VuiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +182,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A14291B7A5A36C1AC6F783B /* Pods_Olli_VuiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771231004145123DAD2EA81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49145DDF8C04B93E8E83D526 /* Pods_Olli_Vui.framework */,
+				8FDC49729D8D19784D28CBBF /* Pods_Olli_VuiTests.framework */,
+				50DB177FBC4EE1F2104DC6D7 /* Pods_Olli_VuiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACF96B8C33497719DEC7C5F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93A4DE91324B2AA8F49FB3DA /* Pods-Olli Vui.debug.xcconfig */,
+				BCF77AEE68842578CBC5D64B /* Pods-Olli Vui.release.xcconfig */,
+				9A59E62863AC91F48BF28E15 /* Pods-Olli VuiTests.debug.xcconfig */,
+				EE8E34B37F7CF5978CB69C0F /* Pods-Olli VuiTests.release.xcconfig */,
+				19463894CAF2CB6F39A46681 /* Pods-Olli VuiUITests.debug.xcconfig */,
+				CF731AAC86FBC0763786F8A9 /* Pods-Olli VuiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B107B1031FFF873F0012029D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B107B1041FFF879E0012029D /* Services.swift */,
+				614B2B5F200BBD7500DE369E /* ServicesConstant.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1254FD41FE106DF008533BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B107B10620031D8F0012029D /* LoginMD.swift */,
+				B107B108200323880012029D /* AccountMD.swift */,
+				B125351D200717D5000B6E66 /* GameMD.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B15AD2A3200CBC2D005E4ADE /* DataConnector */ = {
+			isa = PBXGroup;
+			children = (
+				B14E795F200EF68400AD266A /* Users.swift */,
+				B17701462011A850001DC883 /* Records.swift */,
+			);
+			path = DataConnector;
+			sourceTree = "<group>";
+		};
 		B179DAAF1FDFD5E50024400C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +247,9 @@
 				B179DAD21FDFD5E50024400C /* Olli VuiTests */,
 				B179DADD1FDFD5E50024400C /* Olli VuiUITests */,
 				B179DAB91FDFD5E50024400C /* Products */,
+				ACF96B8C33497719DEC7C5F6 /* Pods */,
+				771231004145123DAD2EA81B /* Frameworks */,
+				B1159E341FFB43A900804A59 /* Olli Vui-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +266,21 @@
 		B179DABA1FDFD5E50024400C /* Olli Vui */ = {
 			isa = PBXGroup;
 			children = (
+				B15AD2A3200CBC2D005E4ADE /* DataConnector */,
+				B107B1031FFF873F0012029D /* Services */,
+				B1159E371FFB761500804A59 /* Olli Vui.entitlements */,
+				B1254FD41FE106DF008533BB /* Model */,
+				B179DAEF1FDFDFBF0024400C /* Resource */,
+				B179DAEE1FDFDFB40024400C /* VIews */,
+				B179DAED1FDFDF9F0024400C /* Controller */,
+				B179DAEC1FDFDF950024400C /* Utilities */,
 				B179DABB1FDFD5E50024400C /* AppDelegate.swift */,
 				B179DABD1FDFD5E50024400C /* ViewController.swift */,
 				B179DABF1FDFD5E50024400C /* Main.storyboard */,
 				B179DAC51FDFD5E50024400C /* Assets.xcassets */,
 				B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */,
 				B179DACA1FDFD5E50024400C /* Info.plist */,
+				B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */,
 				B179DAC21FDFD5E50024400C /* Olli_Vui.xcdatamodeld */,
 			);
 			path = "Olli Vui";
@@ -128,6 +304,74 @@
 			path = "Olli VuiUITests";
 			sourceTree = "<group>";
 		};
+		B179DAEC1FDFDF950024400C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B125352120074191000B6E66 /* GlowingLabel.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B179DAED1FDFDF9F0024400C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */,
+				B1254FD01FE0DD64008533BB /* MainSceenCollectionViewCell.swift */,
+				B1254FD51FE1114C008533BB /* GameViewController.swift */,
+				B15606091FE25CBE00B41728 /* RewardStoreViewController.swift */,
+				B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */,
+				B107B0EF1FFDCFF70012029D /* LoginViewController.swift */,
+				B12535432008B7A7000B6E66 /* HelpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B179DAEE1FDFDFB40024400C /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				B12535442008B7A7000B6E66 /* HelpViewController.xib */,
+				B107B0F01FFDCFF70012029D /* LoginViewController.xib */,
+				B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */,
+				B156060A1FE25CBE00B41728 /* RewardStoreViewController.xib */,
+				B1254FD61FE1114C008533BB /* GameViewController.xib */,
+				B1254FD11FE0DD64008533BB /* MainSceenCollectionViewCell.xib */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		B179DAEF1FDFDFBF0024400C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B125352320075DE2000B6E66 /* Back btn@2x.png */,
+				B125353220075DE4000B6E66 /* Back btn@2x.svg */,
+				B125352C20075DE4000B6E66 /* Gift box@2x.png */,
+				B125352520075DE3000B6E66 /* Gift box@2x.svg */,
+				B125352F20075DE4000B6E66 /* Menu icon@2x.png */,
+				B125352920075DE3000B6E66 /* Menu icon@2x.svg */,
+				B125352A20075DE3000B6E66 /* Next btn@2x.png */,
+				B125353020075DE4000B6E66 /* Next btn@2x.svg */,
+				B125352720075DE3000B6E66 /* Pause btn@2x.png */,
+				B125352B20075DE4000B6E66 /* Pause btn@2x.svg */,
+				B125352420075DE3000B6E66 /* Retry btn@2x.png */,
+				B125352820075DE3000B6E66 /* Retry btn@2x.svg */,
+				B125352E20075DE4000B6E66 /* Star@2x.png */,
+				B125352D20075DE4000B6E66 /* Star@2x.svg */,
+				B125353120075DE4000B6E66 /* User icon@2x.png */,
+				B125352620075DE3000B6E66 /* User icon@2x.svg */,
+				B107B0FF1FFE38B70012029D /* Facebook button.png */,
+				B107B1001FFE38B70012029D /* Google button.png */,
+				B107B0F61FFDD1900012029D /* FB Logo.png */,
+				B107B0F51FFDD18F0012029D /* Forma 1.png */,
+				B107B0F71FFDD1900012029D /* Google logo.png */,
+				B107B0F41FFDD18F0012029D /* Password icon.png */,
+				B107B0F81FFDD1900012029D /* Tab point.png */,
+				B107B0F31FFDD18F0012029D /* User icon.png */,
+				B1159E381FFCB72F00804A59 /* Mascot.png */,
+				B1159E391FFCB72F00804A59 /* Wave.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B179DAE31FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli Vui" */;
 			buildPhases = (
+				7ACFDB5C656EAE897429D696 /* [CP] Check Pods Manifest.lock */,
 				B179DAB41FDFD5E50024400C /* Sources */,
 				B179DAB51FDFD5E50024400C /* Frameworks */,
 				B179DAB61FDFD5E50024400C /* Resources */,
+				9DF7B0B9DD246039EA22163E /* [CP] Embed Pods Frameworks */,
+				2F2B0AC960254F0BDBD592E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B179DAE61FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiTests" */;
 			buildPhases = (
+				363547475F2504780C9A442D /* [CP] Check Pods Manifest.lock */,
 				B179DACB1FDFD5E50024400C /* Sources */,
 				B179DACC1FDFD5E50024400C /* Frameworks */,
 				B179DACD1FDFD5E50024400C /* Resources */,
+				E9B3013066CCEC36053EFA1A /* [CP] Embed Pods Frameworks */,
+				7D454B7D4EBF206F7028ABD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +420,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B179DAE91FDFD5E50024400C /* Build configuration list for PBXNativeTarget "Olli VuiUITests" */;
 			buildPhases = (
+				029FFEC62D0409DCC858CD94 /* [CP] Check Pods Manifest.lock */,
 				B179DAD61FDFD5E50024400C /* Sources */,
 				B179DAD71FDFD5E50024400C /* Frameworks */,
 				B179DAD81FDFD5E50024400C /* Resources */,
+				FAC9B936D6E788C83F139699 /* [CP] Embed Pods Frameworks */,
+				57D340CCB9DE237D3B2AF06D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,7 +449,13 @@
 				TargetAttributes = {
 					B179DAB71FDFD5E50024400C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					B179DACE1FDFD5E50024400C = {
 						CreatedOnToolsVersion = 9.2;
@@ -235,9 +494,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B125353620075DE4000B6E66 /* User icon@2x.svg in Resources */,
+				B107B0FD1FFDD1900012029D /* Google logo.png in Resources */,
+				B107B0F91FFDD1900012029D /* User icon.png in Resources */,
+				B125354020075DE4000B6E66 /* Next btn@2x.svg in Resources */,
 				B179DAC91FDFD5E50024400C /* LaunchScreen.storyboard in Resources */,
+				B125353420075DE4000B6E66 /* Retry btn@2x.png in Resources */,
+				B125353520075DE4000B6E66 /* Gift box@2x.svg in Resources */,
+				B125354120075DE4000B6E66 /* User icon@2x.png in Resources */,
+				B125353B20075DE4000B6E66 /* Pause btn@2x.svg in Resources */,
+				B125353A20075DE4000B6E66 /* Next btn@2x.png in Resources */,
+				B107B0FA1FFDD1900012029D /* Password icon.png in Resources */,
+				B125353D20075DE4000B6E66 /* Star@2x.svg in Resources */,
+				B125353720075DE4000B6E66 /* Pause btn@2x.png in Resources */,
+				B125353F20075DE4000B6E66 /* Menu icon@2x.png in Resources */,
+				B125354220075DE4000B6E66 /* Back btn@2x.svg in Resources */,
+				B125353C20075DE4000B6E66 /* Gift box@2x.png in Resources */,
+				B107B1011FFE38B80012029D /* Facebook button.png in Resources */,
+				B1159E331FFB41BD00804A59 /* GoogleService-Info.plist in Resources */,
+				B125353920075DE4000B6E66 /* Menu icon@2x.svg in Resources */,
+				B125353E20075DE4000B6E66 /* Star@2x.png in Resources */,
+				B107B0F21FFDCFF70012029D /* LoginViewController.xib in Resources */,
+				B1159E3B1FFCB72F00804A59 /* Wave.png in Resources */,
+				B107B0FC1FFDD1900012029D /* FB Logo.png in Resources */,
+				B12535462008B7A7000B6E66 /* HelpViewController.xib in Resources */,
+				B107B1021FFE38B80012029D /* Google button.png in Resources */,
 				B179DAC61FDFD5E50024400C /* Assets.xcassets in Resources */,
+				B1254FD31FE0DD64008533BB /* MainSceenCollectionViewCell.xib in Resources */,
 				B179DAC11FDFD5E50024400C /* Main.storyboard in Resources */,
+				B15606101FE2600900B41728 /* RewardStoreTableViewCell.xib in Resources */,
+				B107B0FE1FFDD1900012029D /* Tab point.png in Resources */,
+				B125353820075DE4000B6E66 /* Retry btn@2x.svg in Resources */,
+				B1254FD81FE1114C008533BB /* GameViewController.xib in Resources */,
+				B1159E3A1FFCB72F00804A59 /* Mascot.png in Resources */,
+				B125353320075DE4000B6E66 /* Back btn@2x.png in Resources */,
+				B107B0FB1FFDD1900012029D /* Forma 1.png in Resources */,
+				B156060C1FE25CBE00B41728 /* RewardStoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +549,214 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		029FFEC62D0409DCC858CD94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Olli VuiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F2B0AC960254F0BDBD592E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363547475F2504780C9A442D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Olli VuiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57D340CCB9DE237D3B2AF06D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACFDB5C656EAE897429D696 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Olli Vui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D454B7D4EBF206F7028ABD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF7B0B9DD246039EA22163E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONWebToken/JWT.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RKValueTransformers/RKValueTransformers.framework",
+				"${BUILT_PRODUCTS_DIR}/RestKit/RestKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SOCKit/SOCKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionKit/TransitionKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601DateFormatterValueTransformer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKValueTransformers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RestKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SOCKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B3013066CCEC36053EFA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC9B936D6E788C83F139699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B179DAB41FDFD5E50024400C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B125352220074191000B6E66 /* GlowingLabel.swift in Sources */,
+				B107B0F11FFDCFF70012029D /* LoginViewController.swift in Sources */,
 				B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */,
+				B1254FD21FE0DD64008533BB /* MainSceenCollectionViewCell.swift in Sources */,
+				B12535452008B7A7000B6E66 /* HelpViewController.swift in Sources */,
+				B125351E200717D5000B6E66 /* GameMD.swift in Sources */,
 				B179DAC41FDFD5E50024400C /* Olli_Vui.xcdatamodeld in Sources */,
 				B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */,
+				B107B10720031D8F0012029D /* LoginMD.swift in Sources */,
+				B14E7960200EF68400AD266A /* Users.swift in Sources */,
+				B107B1051FFF879E0012029D /* Services.swift in Sources */,
+				B156060B1FE25CBE00B41728 /* RewardStoreViewController.swift in Sources */,
+				B17701472011A850001DC883 /* Records.swift in Sources */,
+				B107B109200323880012029D /* AccountMD.swift in Sources */,
+				B1254FD71FE1114C008533BB /* GameViewController.swift in Sources */,
+				B156060F1FE2600900B41728 /* RewardStoreTableViewCell.swift in Sources */,
+				B179DAF11FDFE04F0024400C /* MainScreenCollectionViewController.swift in Sources */,
+				614B2B60200BBD7500DE369E /* ServicesConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,36 +920,50 @@
 		};
 		B179DAE41FDFD5E50024400C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A4DE91324B2AA8F49FB3DA /* Pods-Olli Vui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Olli Vui/Olli Vui.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Olli Vui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Olli Vui-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B179DAE51FDFD5E50024400C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF77AEE68842578CBC5D64B /* Pods-Olli Vui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Olli Vui/Olli Vui.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y99V2NC5C;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Olli Vui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Olli Vui-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		B179DAE71FDFD5E50024400C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A59E62863AC91F48BF28E15 /* Pods-Olli VuiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +981,7 @@
 		};
 		B179DAE81FDFD5E50024400C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8E34B37F7CF5978CB69C0F /* Pods-Olli VuiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +999,7 @@
 		};
 		B179DAEA1FDFD5E50024400C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19463894CAF2CB6F39A46681 /* Pods-Olli VuiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +1016,7 @@
 		};
 		B179DAEB1FDFD5E50024400C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF731AAC86FBC0763786F8A9 /* Pods-Olli VuiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

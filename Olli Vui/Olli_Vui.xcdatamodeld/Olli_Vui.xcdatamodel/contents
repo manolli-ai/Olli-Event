@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Records" representedClassName="Records" syncable="YES" codeGenerationType="class">
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datecreated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="humandatecreated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="record" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datecreated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datelastchangepassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datemodified" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isverified" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobilenumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oauthaccesstoken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oauthprovider" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oauthuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="onesignalid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screenname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalcoin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="verifytype" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="record" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Records" inverseName="user" inverseEntity="Records" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Records" positionX="-45" positionY="153" width="128" height="195"/>
+        <element name="Users" positionX="-45" positionY="0" width="128" height="405"/>
+    </elements>
 </model>

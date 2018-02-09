@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardStoreViewController" customModule="Olli_Vui" customModuleProvider="target">
+            <connections>
+                <outlet property="creditLabel" destination="S38-v1-GKR" id="Mi1-xD-iab"/>
+                <outlet property="creditTableView" destination="2lB-0u-S32" id="jry-l1-8gl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2lB-0u-S32">
+                    <rect key="frame" x="16" y="92" width="343" height="547"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KdY-LB-i35"/>
+                        <outlet property="delegate" destination="-1" id="wFd-vd-Bb3"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit : 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S38-v1-GKR">
+                    <rect key="frame" x="16" y="29" width="343" height="55"/>
+                    <color key="backgroundColor" red="0.21212339401245117" green="0.7775498628616333" blue="0.95579534769058228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Did-WB-AyV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S38-v1-GKR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="0YD-Ge-Nph"/>
+                <constraint firstItem="S38-v1-GKR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="56U-9k-htg"/>
+                <constraint firstItem="2lB-0u-S32" firstAttribute="top" secondItem="S38-v1-GKR" secondAttribute="bottom" constant="8" symbolic="YES" id="G7q-V0-4Rq"/>
+                <constraint firstItem="S38-v1-GKR" firstAttribute="leading" secondItem="2lB-0u-S32" secondAttribute="leading" id="Gem-ud-uqy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2lB-0u-S32" secondAttribute="bottom" constant="28" id="XQk-v0-Z0I"/>
+                <constraint firstItem="S38-v1-GKR" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="feb-Se-e0R"/>
+                <constraint firstItem="S38-v1-GKR" firstAttribute="trailing" secondItem="2lB-0u-S32" secondAttribute="trailing" id="fkd-XE-Ved"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-293.5" y="29.5"/>
+        </view>
+    </objects>
+</document>
