@@ -8,12 +8,13 @@
 
 import UIKit
 import Foundation
-import FBSDKCoreKit
-import FBSDKLoginKit
+//import FBSDKCoreKit
+//import FBSDKLoginKit
 import RestKit
 import KRProgressHUD
 import JWT
 import JWTDecode
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var registerView: UIView!
@@ -21,17 +22,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailtxf: UITextField!
     @IBOutlet var passwordtxf: UITextField!
     @IBOutlet var togle: UIImageView!
-     @IBOutlet var loginTabButton: UIButton!
+    @IBOutlet var loginTabButton: UIButton!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var registerButton: UIButton!
-     @IBOutlet var registerTabButton: UIButton!
+    @IBOutlet var registerTabButton: UIButton!
     @IBOutlet var faceBookButton:UIButton!
     @IBOutlet var googleButton: UIButton!
     @IBOutlet var fullNametfx: UITextField!
     @IBOutlet var emailRegistertxf: UITextField!
     @IBOutlet var passtxf: UITextField!
     @IBOutlet var repeatPasstxf: UITextField!
-
+    let userData: UsersData = UsersData()
+    var user: Users = Users()
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var mainView: ViewController!
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         self.validationText()
@@ -57,7 +60,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+//    let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
     let services:Services = Services()
     let dataconnector:UsersData = UsersData()
     var dict : [String : AnyObject]!
@@ -136,120 +139,191 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func login(sender: AnyObject) {
         self.clearKeyBoard()
-        KRProgressHUD.show()
-        self.services.HTTPRequestPostMethod(param: ["email":self.emailtxf.text, "password" : self.passwordtxf.text], functionPath: "/users/login/email", completionHandler: {(data, response,error) in
-            let httpResponse = response as? HTTPURLResponse
-            if(httpResponse?.statusCode == 200) {
-                do {
-                        DispatchQueue.main.async {
-                            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                            appDelegate.appstate = .online
-                        }
-                    let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                    let jwtString = json[json.index(forKey: "response")!].value["AuthToken"]
-                    do {
-                        let claims = try decode(jwt: jwtString as! String)
-                        self.dataconnector.AddUser(user: claims.body["sub"] as! Dictionary<String,String>,token:jwtString as! String)
-                    }catch {
-                        print(error)
-                    }
-                    print(json)
-                } catch {
-                    print("error")
+        let user : Users = self.userData.fetchUserPhoneNumber(phoneNumber: "\("+84" + self.emailtxf.text!)")
+        if self.emailtxf.text != "" {
+            if(self.userData.CheckExitPhoneNumber(phoneNumber: "\("+84" + self.emailtxf.text!)")) {
+                if(user.oauthaccesstoken != nil && user.oauthaccesstoken != "") {
+                    self.appDelegate.token = user.oauthaccesstoken!
+                   self.showFirstView()
                 }
-                KRProgressHUD.dismiss()
-                self.dismissLoginView()
-            } else {
-//                TODO show error code
             }
-           
-        })
+            else {
+                self.authen()
+            }
+        }
     }
-    func dismissLoginView(){
+    func showFirstView() {
         DispatchQueue.main.async {
-            self.mainView.currentUserEmail = self.emailtxf.text
-        }
-        self.dismiss(animated: true, completion: nil)
-    }
-    @IBAction func FBlogin(sender : AnyObject) {
-        if FBSDKAccessToken.current() != nil {
-            FBSDKLoginManager().logOut()
-            return
-        }
-        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-            if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result!
-                if fbloginresult.grantedPermissions != nil {
-                    if(fbloginresult.grantedPermissions.contains("email"))
-                    {
-                        self.getFBUserData()
-                        //                        self.fbLoginManager.logOut()
-                    }
-                }
+            let user : Users = self.userData.fetchUserPhoneNumber(phoneNumber: "\("+84" + self.emailtxf.text!)")
+            if(user.isprofileupdated == "1") {
+                self.dismissLoginView()
+            }
+            else if(user.isprofileupdated == "3") {
+                //present firstView
+                let firstView : FirstViewController = FirstViewController()
+//                firstView.parentView = self
+                self.present(firstView, animated: true, completion: {
+                })
             }
         }
     }
-    func getFBUserData(){
-        if((FBSDKAccessToken.current()) != nil){
-//            print("check login status \(FBSDKAccessToken.current().tokenString)")
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email, gender"]).start(completionHandler: { (connection, result, error) -> Void in
-                if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-//                  test mock
-                    let temp: Dictionary<String, Any> = ["email": "\(self.dict[self.dict.index(forKey: "email")!].value)",
-                        "password": [
-                            "oauthUid":"",
-                            "oauthAccessToken" : "\(FBSDKAccessToken.current().tokenString)",
-                            "oauthInfo": [
-                                "id" : "\(self.dict[self.dict.index(forKey: "id")!].value)",
-                                "email": "\(self.dict[self.dict.index(forKey: "email")!].value)",
-                                "name": "\(self.dict[self.dict.index(forKey: "name")!].value)",
-                                "first_name": "\(self.dict[self.dict.index(forKey: "first_name")!].value)",
-                                "last_name": "\(self.dict[self.dict.index(forKey: "last_name")!].value)",
-                                "gender": "\(self.dict[self.dict.index(forKey: "gender")!].value)",
-                                "picture": [
-                                    "data": [
-                                        "url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/15977913_10210882023502084_6865895702925001643_n.jpg?oh=66bc7282906dc5ff89b0c823b096b220&oe=5AFCD214"
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-//                    self.callserverWithHTTP(param: temp)
-
-                    self.services.HTTPRequestPostMethod(param: temp,functionPath:"/users/login/facebook", completionHandler: { (data, response,error) in
-                        let httpResponse = response as? HTTPURLResponse
-                        if(httpResponse?.statusCode == 200) {
-                            do {
-                                DispatchQueue.main.async {
-                                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                                    appDelegate.appstate = .online
+    
+    func authen() {
+        PhoneAuthProvider.provider().verifyPhoneNumber("+84" + self.emailtxf.text!, uiDelegate: nil) { (verificationID, error) in
+            if error != nil {
+                KRProgressHUD.showMessage((error?.localizedDescription)!)
+                return
+            }
+            else {
+                UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+                let alert = UIAlertController.init(title: "verify Phone Number", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        if  alert.textFields?.first?.text != "" {
+                            let credential = PhoneAuthProvider.provider().credential(
+                                withVerificationID: verificationID!,
+                                verificationCode: (alert.textFields?.first?.text)!)
+                            Auth.auth().signIn(with: credential) { (user, error) in
+                                if let error = error {
+                                    KRProgressHUD.showMessage((error.localizedDescription))
+                                    return
                                 }
-                                let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                                let jwtString = (json["response"] as! Dictionary<String, AnyObject>)["AuthToken"]
-                                do {
-                                    let claims = try decode(jwt: jwtString as! String)
-                                    self.mainView.currentUserEmail = (claims.body["sub"] as! Dictionary<String,Any>)["email"] as! String
-                                    self.dataconnector.AddUser(user: claims.body["sub"] as! Dictionary<String,Any>,token:jwtString as! String)
-                                    self.dismissLoginView()
-                                }catch {
-                                    print(error)
-                                }
-                                print(json)
-                            } catch {
-                                print("error")
+//                                KRProgressHUD.show()
+                                user!.getIDToken(completion: { (id, error) in
+                                    self.services.HTTPRequestPostMethod(param: ["token": id!],functionPath: "/users/verify/sms", completionHandler: { (data,response,error) in
+                                        do {
+                                            let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+                                            let jwtString = json[json.index(forKey: "data")!].value["AuthToken"]
+                                            do {
+                                                let claims = try decode(jwt: jwtString as! String)
+                                                self.dataconnector.AddUser(user: claims.body["sub"] as! Dictionary<String, Any>,token:jwtString as! String)
+//                                                KRProgressHUD.dismiss()
+                                               self.showFirstView()
+//                                                 self.dismissLoginView()
+                                            }catch {
+                                                KRProgressHUD.showMessage((error.localizedDescription))
+                                            }
+                                        }
+                                        catch {
+                                        }
+                                    })
+                                })
                             }
-                            KRProgressHUD.dismiss()
-                            
-                        } else {
-                            //                TODO show error code
                         }
-                    })
-                    self.dismiss(animated: true, completion: nil)
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                    }}))
+                alert.addTextField { (textField) in
+                    textField.placeholder = "enter your verify code"
+                    textField.keyboardType = .decimalPad
+                    textField.layer.borderColor = UIColor.init(red: 118/255, green: 147/225, blue: 221/225, alpha: 1).cgColor
+                    textField.layer.borderWidth = 1.5
+                    textField.borderStyle = UITextBorderStyle.roundedRect
+                    textField.textAlignment = NSTextAlignment.center
+                    textField.layer.cornerRadius = 15.0
+                    textField.keyboardType = UIKeyboardType.phonePad
                 }
-            })
+                let customView : UIViewController = UIViewController()
+                customView.view.frame = CGRect.init(x: 0, y: 0, width: 60, height: 100)
+                customView.view.backgroundColor = .red
+                alert.addChildViewController(customView)
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
+    
+    public func dismissLoginView(){
+        
+        DispatchQueue.main.async {
+            self.appDelegate.appstate = .online
+            self.mainView.currentUserEmail = self.emailtxf.text
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
+//    @IBAction func FBlogin(sender : AnyObject) {
+//        if FBSDKAccessToken.current() != nil {
+//            FBSDKLoginManager().logOut()
+//            return
+//        }
+//        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+//            if (error == nil){
+//                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+//                if fbloginresult.grantedPermissions != nil {
+//                    if(fbloginresult.grantedPermissions.contains("email"))
+//                    {
+//                        self.getFBUserData()
+//                        //                        self.fbLoginManager.logOut()
+//                    }
+//                }
+//            }
+//        }
+//    }
+//    func getFBUserData(){
+//        if((FBSDKAccessToken.current()) != nil){
+////            print("check login status \(FBSDKAccessToken.current().tokenString)")
+//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email, gender"]).start(completionHandler: { (connection, result, error) -> Void in
+//                if (error == nil){
+//                    self.dict = result as! [String : AnyObject]
+////                  test mock
+//                    let temp: Dictionary<String, Any> = ["email": "\(self.dict[self.dict.index(forKey: "email")!].value)",
+//                        "password": [
+//                            "oauthUid":"",
+//                            "oauthAccessToken" : "\(FBSDKAccessToken.current().tokenString)",
+//                            "oauthInfo": [
+//                                "id" : "\(self.dict[self.dict.index(forKey: "id")!].value)",
+//                                "email": "\(self.dict[self.dict.index(forKey: "email")!].value)",
+//                                "name": "\(self.dict[self.dict.index(forKey: "name")!].value)",
+//                                "first_name": "\(self.dict[self.dict.index(forKey: "first_name")!].value)",
+//                                "last_name": "\(self.dict[self.dict.index(forKey: "last_name")!].value)",
+//                                "gender": "\(self.dict[self.dict.index(forKey: "gender")!].value)",
+//                                "picture": [
+//                                    "data": [
+//                                        "url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/15977913_10210882023502084_6865895702925001643_n.jpg?oh=66bc7282906dc5ff89b0c823b096b220&oe=5AFCD214"
+//                                    ]
+//                                ]
+//                            ]
+//                        ]
+//                    ]
+////                    self.callserverWithHTTP(param: temp)
+//
+//                    self.services.HTTPRequestPostMethod(param: temp,functionPath:"/users/login/facebook", completionHandler: { (data, response,error) in
+//                        let httpResponse = response as? HTTPURLResponse
+//                        if(httpResponse?.statusCode == 200) {
+//                            do {
+//                                DispatchQueue.main.async {
+//                                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//                                    appDelegate.appstate = .online
+//                                }
+//                                let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+//                                let jwtString = (json["response"] as! Dictionary<String, AnyObject>)["AuthToken"]
+//                                do {
+//                                    let claims = try decode(jwt: jwtString as! String)
+//                                    self.mainView.currentUserEmail = (claims.body["sub"] as! Dictionary<String,Any>)["email"] as! String
+//                                    self.dataconnector.AddUser(user: claims.body["sub"] as! Dictionary<String,Any>,token:jwtString as! String)
+//                                    self.dismissLoginView()
+//                                }catch {
+//                                    print(error)
+//                                }
+//                                print(json)
+//                            } catch {
+//                                print("error")
+//                            }
+//                            KRProgressHUD.dismiss()
+//                            
+//                        } else {
+//                            //                TODO show error code
+//                        }
+//                    })
+//                    self.dismiss(animated: true, completion: nil)
+//                }
+//            })
+//        }
+//    }
     func callserverWithHTTP(param: Dictionary<String, Any>) {
         var request = URLRequest(url: URL(string: "https://vui.olli.vn/api/v1/users/login/facebook")!)
         request.httpMethod = "POST"
@@ -293,13 +367,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         requestManager.addResponseDescriptor(resDesCriptor)
         requestManager.getObjectsAtPath("/api/v1/games/", parameters: nil, success: {(operation, result) -> Void in
 //            let rs: Questions = result?.firstObject as! Questions
-            print("kiem tra action tra ve:\(result)")
+            print("kiem tra action tra ve:\(result!)")
         }, failure: nil)
     }
     
     func callChangePass() {
         let responseMapping: RKObjectMapping = RKObjectMapping.init(for: changePassResponse.self)
-//        responseMapping.addAttributeMappings(from: <#T##[Any]!#>)
         let statusCode: NSIndexSet = RKStatusCodeIndexSetForClass(RKStatusCodeClass.successful)! as NSIndexSet
         let responseDecriptor: RKResponseDescriptor = RKResponseDescriptor.init(mapping: responseMapping, method: RKRequestMethod.any, pathPattern: "/api/v1/users/forgotpassword", keyPath: nil, statusCodes: statusCode as IndexSet!)
         let requestMapping: RKObjectMapping = RKObjectMapping.request()
@@ -340,7 +413,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     } catch {
                         print("error")
                     }
-                    KRProgressHUD.dismiss()
+//                    KRProgressHUD.dismiss()
                     self.dismissLoginView()
                 } else {
                     //TODO show error code
@@ -376,5 +449,12 @@ extension UIView {
         
         // Add the animation to the View's layer
         self.layer.add(slideInFromLeftTransition, forKey: "slideInFromLeftTransition")
+    }
+}
+
+extension String {
+    func toJSON() -> Any? {
+        guard let data = self.data(using: .utf8, allowLossyConversion: false) else { return nil }
+        return try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)
     }
 }

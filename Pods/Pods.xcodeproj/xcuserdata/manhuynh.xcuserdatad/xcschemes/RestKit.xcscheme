@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8134720AA283AB25C88A960CAA946A5B'
-               BlueprintName = 'RestKit'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RestKit.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "94950B9A67C26B707EAF7798B59AD048"
+               BlueprintName = "RestKit"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "RestKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

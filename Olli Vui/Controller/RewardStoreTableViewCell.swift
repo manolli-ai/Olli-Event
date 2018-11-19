@@ -9,8 +9,7 @@
 import UIKit
 import Foundation
 class RewardStoreTableViewCell: UITableViewCell {
-    @IBOutlet var buyButton: UIButton!
-    @IBOutlet var startImage:UIImageView!
+    @IBOutlet var title : UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,12 +21,7 @@ class RewardStoreTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBAction func buyAction (sender: AnyObject) {
-        
-    }
     func setupUI() {
-        self.startImage.setRadiusWithShadow()
-        self.buyButton.setRadiusWithShadow(15)
+
     }
 }

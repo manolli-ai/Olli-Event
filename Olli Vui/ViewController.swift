@@ -7,18 +7,34 @@
 //
 
 import UIKit
-import FBSDKCoreKit
-import FBSDKLoginKit
+//import FBSDKCoreKit
+//import FBSDKLoginKit
 import AVFoundation
+import Firebase
+import KRProgressHUD
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,MainScreenCellProtocol {
-    var dict : [String : AnyObject]!
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MainScreenCellProtocol {
+    func GotoHelpcreenDetail(game: Records , limit : Int) {
+    
+        let checkNumber : Int = (Int)(UserDefaults.standard.value(forKey: "PolicyLimit") as! String)!
+        if(limit < checkNumber ) {
+            self.GotoJobDetailScreen()
+        }
+        else {
+            KRProgressHUD.showMessage("Bạn đã hết lượt chơi")
+        }
+    }
+    
     var gameList: [Records] = []
     @IBOutlet var myCollectionGames: UICollectionView!
     @IBOutlet var rewardButton: UIButton!
     @IBOutlet var sendSMSButton: UIButton!
-    let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+     @IBOutlet var headerView : UIView!
+    //let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let customHeaderView : CustomHeaderViewViewController = CustomHeaderViewViewController()
     let loginView: LoginViewController = LoginViewController()
+    let loginViewWithPhoneNumber : LoginWithPhoneNumberViewController = LoginWithPhoneNumberViewController()
     var currentUserEmail:String!
     @IBOutlet var FBButton: UIButton!
     let dataconnector:UsersData = UsersData()
@@ -27,21 +43,39 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let mainScreenGameDetail: GameViewController = GameViewController()
     let helpScrennDetail: HelpViewController = HelpViewController()
     let rewarStore: RewardStoreViewController = RewardStoreViewController()
+    let leftMenuView : CustomLeftMenuViewController = CustomLeftMenuViewController()
+    let changePassView : ChangePasswordViewController = ChangePasswordViewController()
+    let updateInformationView : ProfileViewController = ProfileViewController()
+    let policyView : PolicyViewController = PolicyViewController()
+    let helpFirstView : HelpFirstViewController = HelpFirstViewController()
+    let jobDetailView : JobDetailViewController = JobDetailViewController()
+    let claimHistoryView : ClaimHistoryViewController = ClaimHistoryViewController()
+    let aboutView : AboutViewController = AboutViewController()
+    
+    var currentIndexView : Int = 0
+    
+    var job:Jobs = Jobs()
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.gameList.count
+//        return self.gameList.count
+        return 1
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainSceenCollectionViewCell
         cell.setRadiusWithShadow(9)
         cell.delegate = self
-        cell.game = self.gameList[indexPath.row]
-        cell.Gamelabel.text = cell.game.title
-        cell.totalScore.text = "Lượt tham gia: " + cell.game.value!
+        cell.job = self.job
+        cell.updateUI()
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//         self.GotoHelpcreenDetail()
+//        self.GotoJobDetailScreen()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationItem
         // Do any additional setup after loading the view, typically from a nib.
         myCollectionGames.register(UINib.init(nibName: "MainSceenCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         // Asking user permission for accessing Microphone
@@ -64,14 +98,27 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
         if(appDelegate.appstate == .online) {
-            self.initData()
+                //show first help view
+                if(UserDefaults.standard.value(forKey: "FirstLogin") == nil) {
+                    gotoHelpFirstView()
+                } else {
+//                    self.initData()
+                     UserDefaults.standard.setValue(false, forKey: "FirstLogin")
+                }
+            self.getSynTotalScore()
         }
+        self.customHeaderView.mainViewController.currentIndexView = 1
+    }
+    func gotoHelpFirstView() {
+        self.present(self.helpFirstView, animated: true, completion: nil)
     }
     func gotoLoginView() {
-        self.loginView.mainView = self
-        self.present(self.loginView, animated: true, completion: nil)
+////        self.loginView.mainView = self
+////        self.present(self.loginView, animated: true, completion: nil)
+        self.loginViewWithPhoneNumber.mainViewController = self
+        self.present(self.loginViewWithPhoneNumber, animated: true, completion: nil)
     }
     
     // MARK: UICollectionViewDelegate
@@ -81,79 +128,180 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //    func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
 //
 //    }
-    func GotoGameScreenDetail() {
-        self.navigationController?.pushViewController(mainScreenGameDetail, animated: true)
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 100)
     }
-    func GotoHelpcreenDetail(game: Records) {
-        helpScrennDetail.game = game
-        self.navigationController?.pushViewController(helpScrennDetail, animated: true)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(8, 0, 0, 0)
+    }
+    func GotoGameScreenDetail() {
+//        self.navigationController?.pushViewController(mainScreenGameDetail, animated: true)
+    }
+    func GotoHelpcreenDetail() {
+        self.helpScrennDetail.mainViewController = self
+        self.present(helpScrennDetail, animated: true, completion: nil)
+    }
+    func GotoJobDetailScreen() {
+        self.jobDetailView.mainViewController = self
+        self.present(jobDetailView, animated: true, completion: nil)
     }
     
     func initData() {
-        let mockToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJlbWFpbCIsInN1YiI6eyJpZCI6IjEiLCJzY3JlZW5uYW1lIjoiQWRtaW5pc3RyYXRvciIsImZ1bGxuYW1lIjoiQWRtaW5pc3RyYXRvciIsImVtYWlsIjoiYWRtaW5AbG9jYWxob3N0LmxvY2FsIiwiYWRkcmVzcyI6IiIsInBhc3N3b3JkIjoiIiwiZ3JvdXBpZCI6ImFkbWluaXN0cmF0b3IiLCJhdmF0YXIiOiIiLCJnZW5kZXIiOiJtYWxlIiwic3RhdHVzIjoiMSIsImRvYiI6bnVsbCwib2F1dGh1aWQiOiIiLCJvYXV0aGFjY2Vzc3Rva2VuIjoiIiwib2F1dGhwcm92aWRlciI6IiIsIm9uZXNpZ25hbGlkIjoiIiwic3RhdGUiOiIwIiwiZGF0ZWNyZWF0ZWQiOiIxNDk0NTYwNjk2IiwiZGF0ZWxhc3RjaGFuZ2VwYXNzd29yZCI6IjAiLCJkYXRlbW9kaWZpZWQiOiIxNTExNzc5ODcwIiwibW9iaWxlbnVtYmVyIjoiIiwiaXN2ZXJpZmllZCI6IjEiLCJ2ZXJpZnl0eXBlIjoiMSJ9LCJpYXQiOjE1MTE4NTUzMjcsImV4cCI6MTU0Nzg1NTMyN30.vz80gczJSUE8D1p4imK2P_eU3lZRnpRKho5f9RMqWTc"
-        let user: Users = self.dataconnector.fetchUserData(emai: self.currentUserEmail!) //get email form login view.
-        if user != nil {
-            self.services.HTTPRequestGetMethod(token:"Bearer " + mockToken, param: ["":""], functionPath: "/games/", complettionHandler: { (data, response,error) in
+//        let mockToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJlbWFpbCIsInN1YiI6eyJpZCI6IjEiLCJzY3JlZW5uYW1lIjoiQWRtaW5pc3RyYXRvciIsImZ1bGxuYW1lIjoiQWRtaW5pc3RyYXRvciIsImVtYWlsIjoiYWRtaW5AbG9jYWxob3N0LmxvY2FsIiwiYWRkcmVzcyI6IiIsInBhc3N3b3JkIjoiIiwiZ3JvdXBpZCI6ImFkbWluaXN0cmF0b3IiLCJhdmF0YXIiOiIiLCJnZW5kZXIiOiJtYWxlIiwic3RhdHVzIjoiMSIsImRvYiI6bnVsbCwib2F1dGh1aWQiOiIiLCJvYXV0aGFjY2Vzc3Rva2VuIjoiIiwib2F1dGhwcm92aWRlciI6IiIsIm9uZXNpZ25hbGlkIjoiIiwic3RhdGUiOiIwIiwiZGF0ZWNyZWF0ZWQiOiIxNDk0NTYwNjk2IiwiZGF0ZWxhc3RjaGFuZ2VwYXNzd29yZCI6IjAiLCJkYXRlbW9kaWZpZWQiOiIxNTExNzc5ODcwIiwibW9iaWxlbnVtYmVyIjoiIiwiaXN2ZXJpZmllZCI6IjEiLCJ2ZXJpZnl0eXBlIjoiMSJ9LCJpYXQiOjE1MTE4NTUzMjcsImV4cCI6MTU0Nzg1NTMyN30.vz80gczJSUE8D1p4imK2P_eU3lZRnpRKho5f9RMqWTc"
+//        let user: Users = Users()//self.dataconnector.fetchUserData(emai: self.currentUserEmail!) //get email form login view.
+//        if (user != nil)
+//        {
+            self.services.HTTPRequestGetMethod(token:"Bearer " + self.appDelegate.token, param: ["":""], functionPath: "/games/", complettionHandler: { (data, response,error) in
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                    self.recordconnector.AddRecord(record: json["records"] as! NSArray , user: user)
-                    self.recordconnector.fectchRecords(){ (result) in
-                        self.gameList = result
-                        DispatchQueue.main.async {
-                            self.myCollectionGames.reloadData()
-                        }
+                    if(data != nil) {
+                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+                        self.recordconnector.AddRecord(record: json["records"] as! NSArray )//, user: user)
+                        self.recordconnector.fectchRecords(){ (result) in
+                            self.gameList = result
+                            DispatchQueue.main.async {
+                                self.myCollectionGames.reloadData()
+                            }
+                    }
                 }
                 }catch {
                     print(error)
                 }
             })
-        }
+//        }
     }
     func initUI() {
-        self.rewardButton.setRadiusWithShadow(self.rewardButton.frame.size.width/2)
+        self.customHeaderView.mainViewController = self
+        self.customHeaderView.currentView = self
+        self.customHeaderView.parentView = self
         
+//        self.customHeaderView.view.frame = CGRect.init(x: 0, y: 0, width: self.headerView.frame.width, height: self.headerView.frame.size.height)
+        self.customHeaderView.viewTitle = "Danh sách công việc"
+        self.headerView.addSubview(customHeaderView.view)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         var width = UIScreen.main.bounds.width
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        width = width - 20
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        width = width - 32
         layout.itemSize = CGSize(width: width / 2, height: width / 2)
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
         myCollectionGames!.collectionViewLayout = layout
     }
-    @IBAction func FBlogin(sender : AnyObject) {
-        if FBSDKAccessToken.current() != nil {
-            FBSDKLoginManager().logOut()
-            return
-        }
-        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-            if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result!
-                if fbloginresult.grantedPermissions != nil {
-                    if(fbloginresult.grantedPermissions.contains("email"))
-                    {
-                        self.getFBUserData()
-//                        self.fbLoginManager.logOut()
+    
+    
+    func getSynTotalScore() {
+        if(self.appDelegate.user.oauthuid != nil) {
+            let userID = self.appDelegate.user.oauthuid //Auth.auth().currentUser?.uid
+            if(userID != nil) {
+                let userRef = Database.database().reference().child("users").child(userID!)
+                userRef.observeSingleEvent(of: .value, with: {(snapshot) in
+                    let scoreValue = snapshot.value as? [String : AnyObject] ?? [:]
+                    let totalScore = String(format: "%@", scoreValue["point"] as! CVarArg)
+                    let totalAnswer = scoreValue["record_times"] as! Int // String(format: "%@", scoreValue["record_times"] as! CVarArg)
+                    let job = Jobs.init(title: "", point: totalScore , time: totalAnswer , total: "")
+                    self.job = job
+                    DispatchQueue.main.async {
+                        self.myCollectionGames.reloadData()
                     }
+                }) {
+                    (error) in
+                    print(error.localizedDescription)
                 }
             }
         }
     }
-    func getFBUserData(){
-        if((FBSDKAccessToken.current()) != nil){
-            print("check login status \(FBSDKAccessToken.current().tokenString)")
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email, gender"]).start(completionHandler: { (connection, result, error) -> Void in
-                if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-                    print(result!)
-//                    print(self.dict)
-                }
+    
+    @IBAction func gotoRewardStore(_ sender: UIButton) {
+//        self.navigationController?.pushViewController(rewarStore, animated: true)
+    }
+    
+    func gotoHelpScreenFromCurrentView(currentView : UIViewController) {
+        currentView.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+    }
+    func gotoStoreFromCurrentView(currentView : UIViewController)  {
+        self.rewarStore.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.rewarStore, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.rewarStore, animated: true, completion: nil)
+        }
+    }
+    func gotoChangePassViewFromCurrentView(currentView : UIViewController) {
+        self.changePassView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.changePassView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.changePassView, animated: true, completion: {
+                
             })
         }
     }
-    
-    @IBAction func gotoRewardStore(_ sender: UIButton) {
-        self.navigationController?.pushViewController(rewarStore, animated: true)
+    func gotoProfileViewFromCurrentView(currentView : UIViewController) {
+        self.updateInformationView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.updateInformationView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.updateInformationView, animated: true, completion: {
+                
+            })
+        }
     }
+    func gotoLoginViewWithPhoneNumberFromCurrentView(currentView: UIViewController) {
+        self.loginViewWithPhoneNumber.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.loginViewWithPhoneNumber, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.loginViewWithPhoneNumber, animated: true, completion: {
+                
+            })
+        }
+    }
+    func gotoHelpFirstFromCurrentView(currentView: UIViewController) {
+        self.helpFirstView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.helpFirstView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.helpFirstView, animated: true, completion: {
+                
+            })
+        }
+    }
+    func gotoPolicyView(currentView : UIViewController) {
+        self.policyView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.policyView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.policyView, animated: true, completion: {
+                
+            })
+        }
+    }
+    func gotoClaimHistoryView(currentView : UIViewController) {
+        self.claimHistoryView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.claimHistoryView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.claimHistoryView, animated: true, completion: {
+                
+            })
+        }
+    }
+    func gotoAboutView(currentView : UIViewController) {
+        self.aboutView.mainViewController = self
+        if(self.currentIndexView == 1) {
+            self.present(self.aboutView, animated: true, completion: nil)
+        }
+        else {
+            currentView.present(self.aboutView, animated: true, completion: {
+                
+            })
+        }
+    }
+
 }
 

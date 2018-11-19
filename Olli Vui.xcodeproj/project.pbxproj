@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4404CF151F1F0EC62DEDE983 /* Pods_Olli_Vui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49145DDF8C04B93E8E83D526 /* Pods_Olli_Vui.framework */; };
+		4D9BFEF2209FB67E00593C4D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BFEF0209FB67E00593C4D /* ProfileViewController.swift */; };
+		4D9BFEF3209FB67E00593C4D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9BFEF1209FB67E00593C4D /* ProfileViewController.xib */; };
+		4DD23C2820A3912B00595481 /* CollectionCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD23C2620A3912B00595481 /* CollectionCardViewController.swift */; };
+		4DD23C2920A3912B00595481 /* CollectionCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD23C2720A3912B00595481 /* CollectionCardViewController.xib */; };
+		4DD23C2C20A3971E00595481 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD23C2A20A3971E00595481 /* CardCollectionViewCell.swift */; };
+		4DD23C2D20A3971E00595481 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD23C2B20A3971E00595481 /* CardCollectionViewCell.xib */; };
 		5A14291B7A5A36C1AC6F783B /* Pods_Olli_VuiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DB177FBC4EE1F2104DC6D7 /* Pods_Olli_VuiUITests.framework */; };
 		614B2B60200BBD7500DE369E /* ServicesConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B2B5F200BBD7500DE369E /* ServicesConstant.swift */; };
 		B107B0F11FFDCFF70012029D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B0EF1FFDCFF70012029D /* LoginViewController.swift */; };
@@ -23,9 +29,23 @@
 		B107B1051FFF879E0012029D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B1041FFF879E0012029D /* Services.swift */; };
 		B107B10720031D8F0012029D /* LoginMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B10620031D8F0012029D /* LoginMD.swift */; };
 		B107B109200323880012029D /* AccountMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B107B108200323880012029D /* AccountMD.swift */; };
-		B1159E331FFB41BD00804A59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */; };
 		B1159E3A1FFCB72F00804A59 /* Mascot.png in Resources */ = {isa = PBXBuildFile; fileRef = B1159E381FFCB72F00804A59 /* Mascot.png */; };
 		B1159E3B1FFCB72F00804A59 /* Wave.png in Resources */ = {isa = PBXBuildFile; fileRef = B1159E391FFCB72F00804A59 /* Wave.png */; };
+		B11A856B20BFFCF100564E10 /* Retry btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856320BFFCEF00564E10 /* Retry btn.svg */; };
+		B11A856C20BFFCF100564E10 /* Next btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856420BFFCF000564E10 /* Next btn.svg */; };
+		B11A856D20BFFCF100564E10 /* Wave.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856520BFFCF000564E10 /* Wave.svg */; };
+		B11A856E20BFFCF100564E10 /* Wave@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B11A856620BFFCF000564E10 /* Wave@2x.png */; };
+		B11A857020BFFCF100564E10 /* Back btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856820BFFCF000564E10 /* Back btn.svg */; };
+		B11A857120BFFCF100564E10 /* Star.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856920BFFCF000564E10 /* Star.svg */; };
+		B11A857220BFFCF100564E10 /* Pause btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = B11A856A20BFFCF100564E10 /* Pause btn.svg */; };
+		B1210E92216C69C500C2B8CC /* Icon_tien_mat@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210E8F216C69C400C2B8CC /* Icon_tien_mat@1x.png */; };
+		B1210E93216C69C500C2B8CC /* Icon_tien_mat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210E90216C69C500C2B8CC /* Icon_tien_mat@2x.png */; };
+		B1210E94216C69C500C2B8CC /* Icon_tien_mat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210E91216C69C500C2B8CC /* Icon_tien_mat@3x.png */; };
+		B1210E9C216CB12D00C2B8CC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1210E9A216CB12D00C2B8CC /* AboutViewController.swift */; };
+		B1210E9D216CB12D00C2B8CC /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1210E9B216CB12D00C2B8CC /* AboutViewController.xib */; };
+		B1210EA1216CB2D600C2B8CC /* About@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210E9E216CB2D500C2B8CC /* About@3x.png */; };
+		B1210EA2216CB2D600C2B8CC /* About@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210E9F216CB2D500C2B8CC /* About@1x.png */; };
+		B1210EA3216CB2D600C2B8CC /* About@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1210EA0216CB2D500C2B8CC /* About@2x.png */; };
 		B125351E200717D5000B6E66 /* GameMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125351D200717D5000B6E66 /* GameMD.swift */; };
 		B125352220074191000B6E66 /* GlowingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125352120074191000B6E66 /* GlowingLabel.swift */; };
 		B125353320075DE4000B6E66 /* Back btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B125352320075DE2000B6E66 /* Back btn@2x.png */; };
@@ -50,11 +70,145 @@
 		B1254FD31FE0DD64008533BB /* MainSceenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1254FD11FE0DD64008533BB /* MainSceenCollectionViewCell.xib */; };
 		B1254FD71FE1114C008533BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1254FD51FE1114C008533BB /* GameViewController.swift */; };
 		B1254FD81FE1114C008533BB /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1254FD61FE1114C008533BB /* GameViewController.xib */; };
+		B12649FE2161C626005824C1 /* ClaimHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12649FC2161C626005824C1 /* ClaimHistoryViewController.swift */; };
+		B12649FF2161C626005824C1 /* ClaimHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12649FD2161C626005824C1 /* ClaimHistoryViewController.xib */; };
+		B1264A022161C7EC005824C1 /* ClaimHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1264A002161C7EC005824C1 /* ClaimHistoryTableViewCell.swift */; };
+		B1264A032161C7EC005824C1 /* ClaimHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1264A012161C7EC005824C1 /* ClaimHistoryTableViewCell.xib */; };
+		B1264A052161DA6D005824C1 /* BackRevert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1264A042161DA6D005824C1 /* BackRevert@2x.png */; };
+		B12681992085A2A900EFCC59 /* CustomHeaderViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12681972085A2A900EFCC59 /* CustomHeaderViewViewController.swift */; };
+		B126819A2085A2A900EFCC59 /* CustomHeaderViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B12681982085A2A900EFCC59 /* CustomHeaderViewViewController.xib */; };
+		B126819C2085AA0900EFCC59 /* rightmenuLast.png in Resources */ = {isa = PBXBuildFile; fileRef = B126819B2085AA0800EFCC59 /* rightmenuLast.png */; };
+		B12681A22085AD9000EFCC59 /* Giftbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B12681A12085AD9000EFCC59 /* Giftbox@2x.png */; };
+		B13077A020D8A88000BF01CE /* Mobifone big logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779720D8A87C00BF01CE /* Mobifone big logo@2x.png */; };
+		B13077A120D8A88000BF01CE /* Vinaphone big logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779820D8A87D00BF01CE /* Vinaphone big logo@2x.png */; };
+		B13077A220D8A88000BF01CE /* Viettel big logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779920D8A87D00BF01CE /* Viettel big logo@3x.png */; };
+		B13077A320D8A88000BF01CE /* Vinaphone big logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779A20D8A87D00BF01CE /* Vinaphone big logo@1x.png */; };
+		B13077A420D8A88000BF01CE /* Vinaphone big logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779B20D8A87E00BF01CE /* Vinaphone big logo@3x.png */; };
+		B13077A520D8A88000BF01CE /* Viettel big logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779C20D8A87E00BF01CE /* Viettel big logo@1x.png */; };
+		B13077A620D8A88000BF01CE /* Mobifone big logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779D20D8A87F00BF01CE /* Mobifone big logo@3x.png */; };
+		B13077A720D8A88000BF01CE /* Viettel big logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779E20D8A87F00BF01CE /* Viettel big logo@2x.png */; };
+		B13077A820D8A88000BF01CE /* Mobifone big logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130779F20D8A87F00BF01CE /* Mobifone big logo@1x.png */; };
+		B1308D02216318DB004F7BBE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B1308D01216318DB004F7BBE /* index.html */; };
+		B1308D0921636D30004F7BBE /* Star-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0321636D2E004F7BBE /* Star-gray@2x.png */; };
+		B1308D0A21636D30004F7BBE /* Star-yellow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0421636D2E004F7BBE /* Star-yellow@3x.png */; };
+		B1308D0B21636D30004F7BBE /* Star-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0521636D2F004F7BBE /* Star-yellow@2x.png */; };
+		B1308D0C21636D30004F7BBE /* Star-yellow@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0621636D2F004F7BBE /* Star-yellow@1x.png */; };
+		B1308D0D21636D30004F7BBE /* Star-gray@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0721636D30004F7BBE /* Star-gray@1x.png */; };
+		B1308D0E21636D30004F7BBE /* Star-gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1308D0821636D30004F7BBE /* Star-gray@3x.png */; };
+		B130A32520BD4E700001AE43 /* Menu button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130A32220BD4E6E0001AE43 /* Menu button@2x.png */; };
+		B130A32620BD4E700001AE43 /* Menu button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130A32320BD4E6F0001AE43 /* Menu button@3x.png */; };
+		B130A32720BD4E700001AE43 /* Menu button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B130A32420BD4E700001AE43 /* Menu button@1x.png */; };
+		B1319F59215C7419008ADF96 /* JobDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1319F57215C7419008ADF96 /* JobDetailTableViewCell.swift */; };
+		B1319F5A215C7419008ADF96 /* JobDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1319F58215C7419008ADF96 /* JobDetailTableViewCell.xib */; };
+		B1319F5E215CE2CD008ADF96 /* Help@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1319F5B215CE2CC008ADF96 /* Help@1x.png */; };
+		B1319F5F215CE2CD008ADF96 /* Help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1319F5C215CE2CD008ADF96 /* Help@2x.png */; };
+		B1319F60215CE2CD008ADF96 /* Help@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1319F5D215CE2CD008ADF96 /* Help@3x.png */; };
+		B13F1BB120D37BED00A94057 /* Viettel 502 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1B9F20D37BE600A94057 /* Viettel 502 @3x.png */; };
+		B13F1BB220D37BED00A94057 /* Mobifone 202 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA020D37BE700A94057 /* Mobifone 202 @1x.png */; };
+		B13F1BB320D37BED00A94057 /* Mobifone 502 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA120D37BE700A94057 /* Mobifone 502 @3x.png */; };
+		B13F1BB420D37BED00A94057 /* Viettel 202 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA220D37BE700A94057 /* Viettel 202 @2x.png */; };
+		B13F1BB520D37BED00A94057 /* Vinaphone 202 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA320D37BE800A94057 /* Vinaphone 202 @1x.png */; };
+		B13F1BB620D37BED00A94057 /* Viettel 502 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA420D37BE800A94057 /* Viettel 502 @1x.png */; };
+		B13F1BB720D37BED00A94057 /* Mobifone 502 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA520D37BE900A94057 /* Mobifone 502 @2x.png */; };
+		B13F1BB820D37BED00A94057 /* Vinaphone 502 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA620D37BE900A94057 /* Vinaphone 502 @3x.png */; };
+		B13F1BB920D37BED00A94057 /* Viettel 202 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA720D37BE900A94057 /* Viettel 202 @3x.png */; };
+		B13F1BBA20D37BED00A94057 /* Viettel 202 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA820D37BEA00A94057 /* Viettel 202 @1x.png */; };
+		B13F1BBB20D37BED00A94057 /* Vinaphone 502 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BA920D37BEA00A94057 /* Vinaphone 502 @2x.png */; };
+		B13F1BBC20D37BED00A94057 /* Mobifone 502 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAA20D37BEA00A94057 /* Mobifone 502 @1x.png */; };
+		B13F1BBD20D37BED00A94057 /* Mobifone 202 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAB20D37BEB00A94057 /* Mobifone 202 @2x.png */; };
+		B13F1BBE20D37BED00A94057 /* Mobifone 202 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAC20D37BEB00A94057 /* Mobifone 202 @3x.png */; };
+		B13F1BBF20D37BED00A94057 /* Viettel 502 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAD20D37BEC00A94057 /* Viettel 502 @2x.png */; };
+		B13F1BC020D37BED00A94057 /* Vinaphone 202 @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAE20D37BEC00A94057 /* Vinaphone 202 @2x.png */; };
+		B13F1BC120D37BED00A94057 /* Vinaphone 202 @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BAF20D37BEC00A94057 /* Vinaphone 202 @3x.png */; };
+		B13F1BC220D37BED00A94057 /* Vinaphone 502 @1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F1BB020D37BED00A94057 /* Vinaphone 502 @1x.png */; };
+		B13F445620DB45F1004B312B /* Record card normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445020DB45F0004B312B /* Record card normal@2x.png */; };
+		B13F445720DB45F1004B312B /* Record card pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445120DB45F0004B312B /* Record card pressed@3x.png */; };
+		B13F445820DB45F1004B312B /* Record card pressed@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445220DB45F0004B312B /* Record card pressed@1x.png */; };
+		B13F445920DB45F1004B312B /* Record card pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445320DB45F0004B312B /* Record card pressed@2x.png */; };
+		B13F445A20DB45F1004B312B /* Record card normal@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445420DB45F0004B312B /* Record card normal@1x.png */; };
+		B13F445B20DB45F1004B312B /* Record card normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13F445520DB45F1004B312B /* Record card normal@3x.png */; };
+		B13F7D012071D11E00904988 /* RecordScriptMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F7D002071D11E00904988 /* RecordScriptMD.swift */; };
+		B142C6502167411B008E2922 /* CardInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142C64E2167411B008E2922 /* CardInformationTableViewCell.swift */; };
+		B142C6512167411B008E2922 /* CardInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B142C64F2167411B008E2922 /* CardInformationTableViewCell.xib */; };
+		B1436C9220D2053C0044259F /* Icon_ma_the_di_dong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C8C20D2053B0044259F /* Icon_ma_the_di_dong@2x.png */; };
+		B1436C9320D2053C0044259F /* Icon_qua_luu_niem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C8D20D2053B0044259F /* Icon_qua_luu_niem@3x.png */; };
+		B1436C9420D2053C0044259F /* Icon_ma_the_di_dong@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C8E20D2053B0044259F /* Icon_ma_the_di_dong@1x.png */; };
+		B1436C9520D2053C0044259F /* Icon_qua_luu_niem@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C8F20D2053C0044259F /* Icon_qua_luu_niem@1x.png */; };
+		B1436C9620D2053C0044259F /* Icon_ma_the_di_dong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C9020D2053C0044259F /* Icon_ma_the_di_dong@3x.png */; };
+		B1436C9720D2053C0044259F /* Icon_qua_luu_niem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1436C9120D2053C0044259F /* Icon_qua_luu_niem@2x.png */; };
+		B14AE87420C4D49300F8911A /* tinh.json in Resources */ = {isa = PBXBuildFile; fileRef = B14AE87320C4D49300F8911A /* tinh.json */; };
 		B14E7960200EF68400AD266A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14E795F200EF68400AD266A /* Users.swift */; };
+		B14ED428207DB94D00DEFCC9 /* gifMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14ED427207DB94D00DEFCC9 /* gifMD.swift */; };
+		B14ED42B207DBE7000DEFCC9 /* up16.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED429207DBE6F00DEFCC9 /* up16.png */; };
+		B14ED42C207DBE7000DEFCC9 /* up24.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED42A207DBE7000DEFCC9 /* up24.png */; };
+		B14ED42E207DBFA300DEFCC9 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED42D207DBFA300DEFCC9 /* up.png */; };
+		B14ED431207DC46600DEFCC9 /* up256.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED42F207DC46500DEFCC9 /* up256.png */; };
+		B14ED432207DC46600DEFCC9 /* up128.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED430207DC46600DEFCC9 /* up128.png */; };
+		B14ED440207DCB5100DEFCC9 /* viettel_tran.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED43F207DCB5000DEFCC9 /* viettel_tran.png */; };
+		B14ED443207DCCF000DEFCC9 /* radio-on-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED441207DCCF000DEFCC9 /* radio-on-button.png */; };
+		B14ED444207DCCF000DEFCC9 /* radio-of-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B14ED442207DCCF000DEFCC9 /* radio-of-button.png */; };
+		B1515DB6208ED2AA00E93319 /* CustomLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1515DB4208ED2AA00E93319 /* CustomLeftMenuViewController.swift */; };
+		B1515DB7208ED2AA00E93319 /* CustomLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1515DB5208ED2AA00E93319 /* CustomLeftMenuViewController.xib */; };
+		B15215A6209FF2920029938C /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15215A4209FF2920029938C /* ChangePasswordViewController.swift */; };
+		B15215A7209FF2920029938C /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15215A5209FF2920029938C /* ChangePasswordViewController.xib */; };
+		B15215AB209FF45E0029938C /* Back button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15215A8209FF45D0029938C /* Back button@1x.png */; };
+		B15215AC209FF45E0029938C /* Back button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15215A9209FF45D0029938C /* Back button@2x.png */; };
+		B15215AD209FF45E0029938C /* Back button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15215AA209FF45E0029938C /* Back button@3x.png */; };
 		B156060B1FE25CBE00B41728 /* RewardStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15606091FE25CBE00B41728 /* RewardStoreViewController.swift */; };
 		B156060C1FE25CBE00B41728 /* RewardStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B156060A1FE25CBE00B41728 /* RewardStoreViewController.xib */; };
 		B156060F1FE2600900B41728 /* RewardStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */; };
 		B15606101FE2600900B41728 /* RewardStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */; };
+		B158E4CC208454010069F75C /* mobifone.png in Resources */ = {isa = PBXBuildFile; fileRef = B158E4CB208454010069F75C /* mobifone.png */; };
+		B158E4CE2084551A0069F75C /* vinaphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B158E4CD2084551A0069F75C /* vinaphone.png */; };
+		B158E4D02084AD350069F75C /* MobileCardMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158E4CF2084AD350069F75C /* MobileCardMD.swift */; };
+		B15ECA8A209C55240083A5EE /* Home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15ECA87209C55220083A5EE /* Home@3x.png */; };
+		B15ECA8B209C55240083A5EE /* Home@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15ECA88209C55230083A5EE /* Home@1x.png */; };
+		B15ECA8C209C55240083A5EE /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B15ECA89209C55240083A5EE /* Home@2x.png */; };
+		B162549E209B034D0000DCFD /* Avatar Male@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1625498209B03480000DCFD /* Avatar Male@3x.png */; };
+		B162549F209B034D0000DCFD /* Avatar Female@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1625499209B03490000DCFD /* Avatar Female@1x.png */; };
+		B16254A0209B034D0000DCFD /* Avatar Female@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B162549A209B034A0000DCFD /* Avatar Female@3x.png */; };
+		B16254A1209B034D0000DCFD /* Avatar Female@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B162549B209B034A0000DCFD /* Avatar Female@2x.png */; };
+		B16254A2209B034D0000DCFD /* Avatar Male@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B162549C209B034B0000DCFD /* Avatar Male@2x.png */; };
+		B16254A3209B034D0000DCFD /* Avatar Male@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B162549D209B034C0000DCFD /* Avatar Male@1x.png */; };
+		B16254B4209B0D770000DCFD /* Lock password@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254A4209B0D710000DCFD /* Lock password@1x.png */; };
+		B16254B5209B0D770000DCFD /* Hide password@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254A5209B0D710000DCFD /* Hide password@1x.png */; };
+		B16254B6209B0D770000DCFD /* Lock password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254A6209B0D720000DCFD /* Lock password@2x.png */; };
+		B16254B8209B0D770000DCFD /* Lock password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254A8209B0D720000DCFD /* Lock password@3x.png */; };
+		B16254B9209B0D770000DCFD /* History@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254A9209B0D730000DCFD /* History@3x.png */; };
+		B16254BA209B0D770000DCFD /* Gift box@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AA209B0D730000DCFD /* Gift box@3x.png */; };
+		B16254BB209B0D770000DCFD /* Log out@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AB209B0D740000DCFD /* Log out@1x.png */; };
+		B16254BC209B0D770000DCFD /* Log out@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AC209B0D740000DCFD /* Log out@3x.png */; };
+		B16254BD209B0D770000DCFD /* History@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AD209B0D740000DCFD /* History@1x.png */; };
+		B16254BE209B0D770000DCFD /* Gift box@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AE209B0D750000DCFD /* Gift box@1x.png */; };
+		B16254BF209B0D770000DCFD /* History@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254AF209B0D750000DCFD /* History@2x.png */; };
+		B16254C0209B0D770000DCFD /* Gradient Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B16254B0209B0D760000DCFD /* Gradient Background.jpg */; };
+		B16254C1209B0D770000DCFD /* Hide password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254B1209B0D760000DCFD /* Hide password@2x.png */; };
+		B16254C2209B0D770000DCFD /* Log out@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254B2209B0D760000DCFD /* Log out@2x.png */; };
+		B16254C3209B0D770000DCFD /* Hide password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254B3209B0D770000DCFD /* Hide password@3x.png */; };
+		B16254C7209B0E020000DCFD /* Contract@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254C4209B0E000000DCFD /* Contract@3x.png */; };
+		B16254C8209B0E020000DCFD /* Contract@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254C5209B0E010000DCFD /* Contract@1x.png */; };
+		B16254C9209B0E020000DCFD /* Contract@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254C6209B0E010000DCFD /* Contract@2x.png */; };
+		B16254CD209B0F990000DCFD /* Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254CA209B0F980000DCFD /* Profile@2x.png */; };
+		B16254CE209B0F990000DCFD /* Profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254CB209B0F980000DCFD /* Profile@3x.png */; };
+		B16254CF209B0F990000DCFD /* Profile@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16254CC209B0F980000DCFD /* Profile@1x.png */; };
+		B1644BB120A538AB00971F0F /* Score box@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BAE20A538AA00971F0F /* Score box@1x.png */; };
+		B1644BB220A538AB00971F0F /* Score box@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BAF20A538AB00971F0F /* Score box@3x.png */; };
+		B1644BB320A538AB00971F0F /* Score box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB020A538AB00971F0F /* Score box@2x.png */; };
+		B1644BBA20A53E4500971F0F /* Record next button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB420A53E4200971F0F /* Record next button@1x.png */; };
+		B1644BBB20A53E4500971F0F /* Record next button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB520A53E4200971F0F /* Record next button@2x.png */; };
+		B1644BBD20A53E4500971F0F /* Retry button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB720A53E4400971F0F /* Retry button@1x.png */; };
+		B1644BBE20A53E4500971F0F /* Retry button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB820A53E4400971F0F /* Retry button@2x.png */; };
+		B1644BBF20A53E4500971F0F /* Retry button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BB920A53E4500971F0F /* Retry button@3x.png */; };
+		B1644BC720A542F000971F0F /* Record next button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1644BC620A542F000971F0F /* Record next button@3x.png */; };
+		B1644BCA20A57D5D00971F0F /* CardInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1644BC820A57D5D00971F0F /* CardInfomationViewController.swift */; };
+		B1644BCB20A57D5D00971F0F /* CardInfomationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1644BC920A57D5D00971F0F /* CardInfomationViewController.xib */; };
+		B1692AB3217DB86F00A00E62 /* Gotit 100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AAD217DB86C00A00E62 /* Gotit 100@2x.png */; };
+		B1692AB4217DB86F00A00E62 /* Gotit 50@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AAE217DB86D00A00E62 /* Gotit 50@3x.png */; };
+		B1692AB5217DB86F00A00E62 /* Gotit 50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AAF217DB86D00A00E62 /* Gotit 50@1x.png */; };
+		B1692AB6217DB86F00A00E62 /* Gotit 50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AB0217DB86E00A00E62 /* Gotit 50@2x.png */; };
+		B1692AB7217DB86F00A00E62 /* Gotit 100@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AB1217DB86E00A00E62 /* Gotit 100@3x.png */; };
+		B1692AB8217DB86F00A00E62 /* Gotit 100@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1692AB2217DB86E00A00E62 /* Gotit 100@1x.png */; };
+		B16B4650215DED53003CB8EF /* StarGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B16B464F215DED53003CB8EF /* StarGray@2x.png */; };
 		B17701472011A850001DC883 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17701462011A850001DC883 /* Records.swift */; };
 		B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABB1FDFD5E50024400C /* AppDelegate.swift */; };
 		B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DABD1FDFD5E50024400C /* ViewController.swift */; };
@@ -65,6 +219,62 @@
 		B179DAD41FDFD5E50024400C /* Olli_VuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DAD31FDFD5E50024400C /* Olli_VuiTests.swift */; };
 		B179DADF1FDFD5E50024400C /* Olli_VuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */; };
 		B179DAF11FDFE04F0024400C /* MainScreenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */; };
+		B18CB2AF20A9809600568906 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CB2AD20A9809600568906 /* CustomPickerViewController.swift */; };
+		B18CB2B020A9809600568906 /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18CB2AE20A9809600568906 /* CustomPickerViewController.xib */; };
+		B19BF22520873558006BEC11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B145019720771FEA008FD7B7 /* GoogleService-Info.plist */; };
+		B1A69463208F21B8009FF34A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A69461208F21B8009FF34A /* FirstViewController.swift */; };
+		B1A69464208F21B8009FF34A /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1A69462208F21B8009FF34A /* FirstViewController.xib */; };
+		B1A6946B208F26A1009FF34A /* Uncheck box@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69465208F269F009FF34A /* Uncheck box@1x.png */; };
+		B1A6946C208F26A1009FF34A /* Uncheck box@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69466208F269F009FF34A /* Uncheck box@3x.png */; };
+		B1A6946D208F26A1009FF34A /* Check box@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69467208F26A0009FF34A /* Check box@3x.png */; };
+		B1A6946E208F26A1009FF34A /* Check box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69468208F26A0009FF34A /* Check box@2x.png */; };
+		B1A6946F208F26A1009FF34A /* Check box@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69469208F26A0009FF34A /* Check box@1x.png */; };
+		B1A69470208F26A1009FF34A /* Uncheck box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A6946A208F26A1009FF34A /* Uncheck box@2x.png */; };
+		B1A69474208F297B009FF34A /* Dropdown button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69471208F297A009FF34A /* Dropdown button@1x.png */; };
+		B1A69475208F297B009FF34A /* Dropdown button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69472208F297A009FF34A /* Dropdown button@3x.png */; };
+		B1A69476208F297B009FF34A /* Dropdown button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69473208F297A009FF34A /* Dropdown button@2x.png */; };
+		B1B767D92092BEE700BD31FD /* LoginWithPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B767D72092BEE700BD31FD /* LoginWithPhoneNumberViewController.swift */; };
+		B1B767DA2092BEE700BD31FD /* LoginWithPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B767D82092BEE700BD31FD /* LoginWithPhoneNumberViewController.xib */; };
+		B1B767DE2092C67A00BD31FD /* View password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B767DB2092C67900BD31FD /* View password@2x.png */; };
+		B1B767DF2092C67A00BD31FD /* View password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B767DC2092C67900BD31FD /* View password@3x.png */; };
+		B1B767E02092C67A00BD31FD /* View password@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B767DD2092C67A00BD31FD /* View password@1x.png */; };
+		B1B767E32092D32400BD31FD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B767E12092D32400BD31FD /* RegisterViewController.swift */; };
+		B1B767E42092D32400BD31FD /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B767E22092D32400BD31FD /* RegisterViewController.xib */; };
+		B1BAA97E20A2D95400E3C658 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BAA97D20A2D95400E3C658 /* Utility.swift */; };
+		B1BF146320808C570006702F /* GiffStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF146220808C570006702F /* GiffStore.swift */; };
+		B1BF14662080BACD0006702F /* TopUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF14642080BACD0006702F /* TopUpCardViewController.swift */; };
+		B1BF14672080BACD0006702F /* TopUpCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1BF14652080BACD0006702F /* TopUpCardViewController.xib */; };
+		B1BF146A2080BBD70006702F /* TopUpCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF14682080BBD70006702F /* TopUpCardTableViewCell.swift */; };
+		B1BF146B2080BBD70006702F /* TopUpCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1BF14692080BBD70006702F /* TopUpCardTableViewCell.xib */; };
+		B1C2428320AAC143003D42C3 /* Stop button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428020AAC141003D42C3 /* Stop button@2x.png */; };
+		B1C2428420AAC143003D42C3 /* Stop button@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428120AAC142003D42C3 /* Stop button@1x.png */; };
+		B1C2428520AAC143003D42C3 /* Stop button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428220AAC143003D42C3 /* Stop button@3x.png */; };
+		B1C2428920AAC508003D42C3 /* Recording red dot@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428620AAC506003D42C3 /* Recording red dot@1x.png */; };
+		B1C2428A20AAC508003D42C3 /* Recording red dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428720AAC507003D42C3 /* Recording red dot@2x.png */; };
+		B1C2428B20AAC508003D42C3 /* Recording red dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2428820AAC508003D42C3 /* Recording red dot@3x.png */; };
+		B1C2429820AC229A003D42C3 /* Instruction 2@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429220AC2297003D42C3 /* Instruction 2@1x.png */; };
+		B1C2429920AC229A003D42C3 /* Instruction 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429320AC2297003D42C3 /* Instruction 1@2x.png */; };
+		B1C2429A20AC229A003D42C3 /* Instruction 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429420AC2298003D42C3 /* Instruction 2@2x.png */; };
+		B1C2429B20AC229A003D42C3 /* Instruction 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429520AC2299003D42C3 /* Instruction 2@3x.png */; };
+		B1C2429C20AC229A003D42C3 /* Instruction 1@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429620AC2299003D42C3 /* Instruction 1@1x.png */; };
+		B1C2429D20AC229A003D42C3 /* Instruction 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C2429720AC229A003D42C3 /* Instruction 1@3x.png */; };
+		B1CA024F20B4FED400326C0B /* ClaimGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA024D20B4FED400326C0B /* ClaimGifViewController.swift */; };
+		B1CA025020B4FED400326C0B /* ClaimGifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CA024E20B4FED400326C0B /* ClaimGifViewController.xib */; };
+		B1E7916520AD6C110008615F /* FinishRecordGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7916320AD6C110008615F /* FinishRecordGameViewController.swift */; };
+		B1E7916620AD6C110008615F /* FinishRecordGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E7916420AD6C110008615F /* FinishRecordGameViewController.xib */; };
+		B1E7916920AE6FAA0008615F /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7916720AE6FAA0008615F /* PolicyViewController.swift */; };
+		B1E7916A20AE6FAA0008615F /* PolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E7916820AE6FAA0008615F /* PolicyViewController.xib */; };
+		B1E7EB4620C66FAA00916CBC /* GifStoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EB4420C66FAA00916CBC /* GifStoreCollectionViewCell.swift */; };
+		B1E7EB4720C66FAA00916CBC /* GifStoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EB4520C66FAA00916CBC /* GifStoreCollectionViewCell.xib */; };
+		B1E7EB4B20C6723B00916CBC /* Qua_luu_niem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EB4820C6723A00916CBC /* Qua_luu_niem@2x.png */; };
+		B1E7EB4C20C6723B00916CBC /* Qua_luu_niem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EB4920C6723B00916CBC /* Qua_luu_niem@3x.png */; };
+		B1E7EB4D20C6723B00916CBC /* Qua_luu_niem@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EB4A20C6723B00916CBC /* Qua_luu_niem@1x.png */; };
+		B1E8BA6220D8FEAF006F9AF6 /* MissingPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8BA6020D8FEAF006F9AF6 /* MissingPasswordViewController.swift */; };
+		B1E8BA6320D8FEAF006F9AF6 /* MissingPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E8BA6120D8FEAF006F9AF6 /* MissingPasswordViewController.xib */; };
+		B1F12F70215B6C2700327147 /* HelpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F12F6E215B6C2700327147 /* HelpFirstViewController.swift */; };
+		B1F12F71215B6C2700327147 /* HelpFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F12F6F215B6C2700327147 /* HelpFirstViewController.xib */; };
+		B1F12F74215B8C1300327147 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F12F72215B8C1300327147 /* JobDetailViewController.swift */; };
+		B1F12F75215B8C1300327147 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F12F73215B8C1300327147 /* JobDetailViewController.xib */; };
 		DD121E50238D6F0D7E43FA91 /* Pods_Olli_VuiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDC49729D8D19784D28CBBF /* Pods_Olli_VuiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +298,12 @@
 /* Begin PBXFileReference section */
 		19463894CAF2CB6F39A46681 /* Pods-Olli VuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		49145DDF8C04B93E8E83D526 /* Pods_Olli_Vui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_Vui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9BFEF0209FB67E00593C4D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D9BFEF1209FB67E00593C4D /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		4DD23C2620A3912B00595481 /* CollectionCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCardViewController.swift; sourceTree = "<group>"; };
+		4DD23C2720A3912B00595481 /* CollectionCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCardViewController.xib; sourceTree = "<group>"; };
+		4DD23C2A20A3971E00595481 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DD23C2B20A3971E00595481 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		50DB177FBC4EE1F2104DC6D7 /* Pods_Olli_VuiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_VuiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		614B2B5F200BBD7500DE369E /* ServicesConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesConstant.swift; sourceTree = "<group>"; };
 		8FDC49729D8D19784D28CBBF /* Pods_Olli_VuiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olli_VuiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,11 +322,25 @@
 		B107B1041FFF879E0012029D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		B107B10620031D8F0012029D /* LoginMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMD.swift; sourceTree = "<group>"; };
 		B107B108200323880012029D /* AccountMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMD.swift; sourceTree = "<group>"; };
-		B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1159E341FFB43A900804A59 /* Olli Vui-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Olli Vui-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1159E371FFB761500804A59 /* Olli Vui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Olli Vui.entitlements"; sourceTree = "<group>"; };
 		B1159E381FFCB72F00804A59 /* Mascot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mascot.png; sourceTree = "<group>"; };
 		B1159E391FFCB72F00804A59 /* Wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wave.png; sourceTree = "<group>"; };
+		B11A856320BFFCEF00564E10 /* Retry btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Retry btn.svg"; sourceTree = "<group>"; };
+		B11A856420BFFCF000564E10 /* Next btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Next btn.svg"; sourceTree = "<group>"; };
+		B11A856520BFFCF000564E10 /* Wave.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wave.svg; sourceTree = "<group>"; };
+		B11A856620BFFCF000564E10 /* Wave@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wave@2x.png"; sourceTree = "<group>"; };
+		B11A856820BFFCF000564E10 /* Back btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Back btn.svg"; sourceTree = "<group>"; };
+		B11A856920BFFCF000564E10 /* Star.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Star.svg; sourceTree = "<group>"; };
+		B11A856A20BFFCF100564E10 /* Pause btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pause btn.svg"; sourceTree = "<group>"; };
+		B1210E8F216C69C400C2B8CC /* Icon_tien_mat@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_tien_mat@1x.png"; sourceTree = "<group>"; };
+		B1210E90216C69C500C2B8CC /* Icon_tien_mat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_tien_mat@2x.png"; sourceTree = "<group>"; };
+		B1210E91216C69C500C2B8CC /* Icon_tien_mat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_tien_mat@3x.png"; sourceTree = "<group>"; };
+		B1210E9A216CB12D00C2B8CC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B1210E9B216CB12D00C2B8CC /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		B1210E9E216CB2D500C2B8CC /* About@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About@3x.png"; sourceTree = "<group>"; };
+		B1210E9F216CB2D500C2B8CC /* About@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About@1x.png"; sourceTree = "<group>"; };
+		B1210EA0216CB2D500C2B8CC /* About@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About@2x.png"; sourceTree = "<group>"; };
 		B125351D200717D5000B6E66 /* GameMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMD.swift; sourceTree = "<group>"; };
 		B125352120074191000B6E66 /* GlowingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingLabel.swift; sourceTree = "<group>"; };
 		B125352320075DE2000B6E66 /* Back btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back btn@2x.png"; sourceTree = "<group>"; };
@@ -135,11 +365,146 @@
 		B1254FD11FE0DD64008533BB /* MainSceenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSceenCollectionViewCell.xib; sourceTree = "<group>"; };
 		B1254FD51FE1114C008533BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B1254FD61FE1114C008533BB /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		B12649FC2161C626005824C1 /* ClaimHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimHistoryViewController.swift; sourceTree = "<group>"; };
+		B12649FD2161C626005824C1 /* ClaimHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClaimHistoryViewController.xib; sourceTree = "<group>"; };
+		B1264A002161C7EC005824C1 /* ClaimHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		B1264A012161C7EC005824C1 /* ClaimHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClaimHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		B1264A042161DA6D005824C1 /* BackRevert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackRevert@2x.png"; sourceTree = "<group>"; };
+		B12681972085A2A900EFCC59 /* CustomHeaderViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewViewController.swift; sourceTree = "<group>"; };
+		B12681982085A2A900EFCC59 /* CustomHeaderViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderViewViewController.xib; sourceTree = "<group>"; };
+		B126819B2085AA0800EFCC59 /* rightmenuLast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightmenuLast.png; sourceTree = "<group>"; };
+		B12681A12085AD9000EFCC59 /* Giftbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Giftbox@2x.png"; sourceTree = "<group>"; };
+		B130779720D8A87C00BF01CE /* Mobifone big logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone big logo@2x.png"; sourceTree = "<group>"; };
+		B130779820D8A87D00BF01CE /* Vinaphone big logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone big logo@2x.png"; sourceTree = "<group>"; };
+		B130779920D8A87D00BF01CE /* Viettel big logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel big logo@3x.png"; sourceTree = "<group>"; };
+		B130779A20D8A87D00BF01CE /* Vinaphone big logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone big logo@1x.png"; sourceTree = "<group>"; };
+		B130779B20D8A87E00BF01CE /* Vinaphone big logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone big logo@3x.png"; sourceTree = "<group>"; };
+		B130779C20D8A87E00BF01CE /* Viettel big logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel big logo@1x.png"; sourceTree = "<group>"; };
+		B130779D20D8A87F00BF01CE /* Mobifone big logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone big logo@3x.png"; sourceTree = "<group>"; };
+		B130779E20D8A87F00BF01CE /* Viettel big logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel big logo@2x.png"; sourceTree = "<group>"; };
+		B130779F20D8A87F00BF01CE /* Mobifone big logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone big logo@1x.png"; sourceTree = "<group>"; };
+		B1308D01216318DB004F7BBE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B1308D0321636D2E004F7BBE /* Star-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-gray@2x.png"; sourceTree = "<group>"; };
+		B1308D0421636D2E004F7BBE /* Star-yellow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-yellow@3x.png"; sourceTree = "<group>"; };
+		B1308D0521636D2F004F7BBE /* Star-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-yellow@2x.png"; sourceTree = "<group>"; };
+		B1308D0621636D2F004F7BBE /* Star-yellow@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-yellow@1x.png"; sourceTree = "<group>"; };
+		B1308D0721636D30004F7BBE /* Star-gray@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-gray@1x.png"; sourceTree = "<group>"; };
+		B1308D0821636D30004F7BBE /* Star-gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-gray@3x.png"; sourceTree = "<group>"; };
+		B130A32220BD4E6E0001AE43 /* Menu button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu button@2x.png"; sourceTree = "<group>"; };
+		B130A32320BD4E6F0001AE43 /* Menu button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu button@3x.png"; sourceTree = "<group>"; };
+		B130A32420BD4E700001AE43 /* Menu button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu button@1x.png"; sourceTree = "<group>"; };
+		B1319F57215C7419008ADF96 /* JobDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B1319F58215C7419008ADF96 /* JobDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B1319F5B215CE2CC008ADF96 /* Help@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@1x.png"; sourceTree = "<group>"; };
+		B1319F5C215CE2CD008ADF96 /* Help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@2x.png"; sourceTree = "<group>"; };
+		B1319F5D215CE2CD008ADF96 /* Help@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@3x.png"; sourceTree = "<group>"; };
+		B13F1B9F20D37BE600A94057 /* Viettel 502 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 502 @3x.png"; sourceTree = "<group>"; };
+		B13F1BA020D37BE700A94057 /* Mobifone 202 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 202 @1x.png"; sourceTree = "<group>"; };
+		B13F1BA120D37BE700A94057 /* Mobifone 502 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 502 @3x.png"; sourceTree = "<group>"; };
+		B13F1BA220D37BE700A94057 /* Viettel 202 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 202 @2x.png"; sourceTree = "<group>"; };
+		B13F1BA320D37BE800A94057 /* Vinaphone 202 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 202 @1x.png"; sourceTree = "<group>"; };
+		B13F1BA420D37BE800A94057 /* Viettel 502 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 502 @1x.png"; sourceTree = "<group>"; };
+		B13F1BA520D37BE900A94057 /* Mobifone 502 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 502 @2x.png"; sourceTree = "<group>"; };
+		B13F1BA620D37BE900A94057 /* Vinaphone 502 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 502 @3x.png"; sourceTree = "<group>"; };
+		B13F1BA720D37BE900A94057 /* Viettel 202 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 202 @3x.png"; sourceTree = "<group>"; };
+		B13F1BA820D37BEA00A94057 /* Viettel 202 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 202 @1x.png"; sourceTree = "<group>"; };
+		B13F1BA920D37BEA00A94057 /* Vinaphone 502 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 502 @2x.png"; sourceTree = "<group>"; };
+		B13F1BAA20D37BEA00A94057 /* Mobifone 502 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 502 @1x.png"; sourceTree = "<group>"; };
+		B13F1BAB20D37BEB00A94057 /* Mobifone 202 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 202 @2x.png"; sourceTree = "<group>"; };
+		B13F1BAC20D37BEB00A94057 /* Mobifone 202 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mobifone 202 @3x.png"; sourceTree = "<group>"; };
+		B13F1BAD20D37BEC00A94057 /* Viettel 502 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Viettel 502 @2x.png"; sourceTree = "<group>"; };
+		B13F1BAE20D37BEC00A94057 /* Vinaphone 202 @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 202 @2x.png"; sourceTree = "<group>"; };
+		B13F1BAF20D37BEC00A94057 /* Vinaphone 202 @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 202 @3x.png"; sourceTree = "<group>"; };
+		B13F1BB020D37BED00A94057 /* Vinaphone 502 @1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vinaphone 502 @1x.png"; sourceTree = "<group>"; };
+		B13F445020DB45F0004B312B /* Record card normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card normal@2x.png"; sourceTree = "<group>"; };
+		B13F445120DB45F0004B312B /* Record card pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card pressed@3x.png"; sourceTree = "<group>"; };
+		B13F445220DB45F0004B312B /* Record card pressed@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card pressed@1x.png"; sourceTree = "<group>"; };
+		B13F445320DB45F0004B312B /* Record card pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card pressed@2x.png"; sourceTree = "<group>"; };
+		B13F445420DB45F0004B312B /* Record card normal@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card normal@1x.png"; sourceTree = "<group>"; };
+		B13F445520DB45F1004B312B /* Record card normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record card normal@3x.png"; sourceTree = "<group>"; };
+		B13F7D002071D11E00904988 /* RecordScriptMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordScriptMD.swift; sourceTree = "<group>"; };
+		B142C64E2167411B008E2922 /* CardInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInformationTableViewCell.swift; sourceTree = "<group>"; };
+		B142C64F2167411B008E2922 /* CardInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardInformationTableViewCell.xib; sourceTree = "<group>"; };
+		B1436C8C20D2053B0044259F /* Icon_ma_the_di_dong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ma_the_di_dong@2x.png"; sourceTree = "<group>"; };
+		B1436C8D20D2053B0044259F /* Icon_qua_luu_niem@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_qua_luu_niem@3x.png"; sourceTree = "<group>"; };
+		B1436C8E20D2053B0044259F /* Icon_ma_the_di_dong@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ma_the_di_dong@1x.png"; sourceTree = "<group>"; };
+		B1436C8F20D2053C0044259F /* Icon_qua_luu_niem@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_qua_luu_niem@1x.png"; sourceTree = "<group>"; };
+		B1436C9020D2053C0044259F /* Icon_ma_the_di_dong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ma_the_di_dong@3x.png"; sourceTree = "<group>"; };
+		B1436C9120D2053C0044259F /* Icon_qua_luu_niem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_qua_luu_niem@2x.png"; sourceTree = "<group>"; };
+		B145019720771FEA008FD7B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B14AE87320C4D49300F8911A /* tinh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tinh.json; sourceTree = "<group>"; };
 		B14E795F200EF68400AD266A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B14ED427207DB94D00DEFCC9 /* gifMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifMD.swift; sourceTree = "<group>"; };
+		B14ED429207DBE6F00DEFCC9 /* up16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up16.png; sourceTree = "<group>"; };
+		B14ED42A207DBE7000DEFCC9 /* up24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up24.png; sourceTree = "<group>"; };
+		B14ED42D207DBFA300DEFCC9 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		B14ED42F207DC46500DEFCC9 /* up256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up256.png; sourceTree = "<group>"; };
+		B14ED430207DC46600DEFCC9 /* up128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up128.png; sourceTree = "<group>"; };
+		B14ED43F207DCB5000DEFCC9 /* viettel_tran.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viettel_tran.png; sourceTree = "<group>"; };
+		B14ED441207DCCF000DEFCC9 /* radio-on-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-on-button.png"; sourceTree = "<group>"; };
+		B14ED442207DCCF000DEFCC9 /* radio-of-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-of-button.png"; sourceTree = "<group>"; };
+		B1515DB4208ED2AA00E93319 /* CustomLeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLeftMenuViewController.swift; sourceTree = "<group>"; };
+		B1515DB5208ED2AA00E93319 /* CustomLeftMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLeftMenuViewController.xib; sourceTree = "<group>"; };
+		B15215A4209FF2920029938C /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		B15215A5209FF2920029938C /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		B15215A8209FF45D0029938C /* Back button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back button@1x.png"; sourceTree = "<group>"; };
+		B15215A9209FF45D0029938C /* Back button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back button@2x.png"; sourceTree = "<group>"; };
+		B15215AA209FF45E0029938C /* Back button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back button@3x.png"; sourceTree = "<group>"; };
 		B15606091FE25CBE00B41728 /* RewardStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreViewController.swift; sourceTree = "<group>"; };
 		B156060A1FE25CBE00B41728 /* RewardStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardStoreViewController.xib; sourceTree = "<group>"; };
 		B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreTableViewCell.swift; sourceTree = "<group>"; };
 		B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardStoreTableViewCell.xib; sourceTree = "<group>"; };
+		B158E4CB208454010069F75C /* mobifone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobifone.png; sourceTree = "<group>"; };
+		B158E4CD2084551A0069F75C /* vinaphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vinaphone.png; sourceTree = "<group>"; };
+		B158E4CF2084AD350069F75C /* MobileCardMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCardMD.swift; sourceTree = "<group>"; };
+		B15ECA87209C55220083A5EE /* Home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@3x.png"; sourceTree = "<group>"; };
+		B15ECA88209C55230083A5EE /* Home@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@1x.png"; sourceTree = "<group>"; };
+		B15ECA89209C55240083A5EE /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
+		B1625498209B03480000DCFD /* Avatar Male@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Male@3x.png"; sourceTree = "<group>"; };
+		B1625499209B03490000DCFD /* Avatar Female@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Female@1x.png"; sourceTree = "<group>"; };
+		B162549A209B034A0000DCFD /* Avatar Female@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Female@3x.png"; sourceTree = "<group>"; };
+		B162549B209B034A0000DCFD /* Avatar Female@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Female@2x.png"; sourceTree = "<group>"; };
+		B162549C209B034B0000DCFD /* Avatar Male@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Male@2x.png"; sourceTree = "<group>"; };
+		B162549D209B034C0000DCFD /* Avatar Male@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar Male@1x.png"; sourceTree = "<group>"; };
+		B16254A4209B0D710000DCFD /* Lock password@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lock password@1x.png"; sourceTree = "<group>"; };
+		B16254A5209B0D710000DCFD /* Hide password@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hide password@1x.png"; sourceTree = "<group>"; };
+		B16254A6209B0D720000DCFD /* Lock password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lock password@2x.png"; sourceTree = "<group>"; };
+		B16254A8209B0D720000DCFD /* Lock password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lock password@3x.png"; sourceTree = "<group>"; };
+		B16254A9209B0D730000DCFD /* History@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "History@3x.png"; sourceTree = "<group>"; };
+		B16254AA209B0D730000DCFD /* Gift box@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gift box@3x.png"; sourceTree = "<group>"; };
+		B16254AB209B0D740000DCFD /* Log out@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Log out@1x.png"; sourceTree = "<group>"; };
+		B16254AC209B0D740000DCFD /* Log out@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Log out@3x.png"; sourceTree = "<group>"; };
+		B16254AD209B0D740000DCFD /* History@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "History@1x.png"; sourceTree = "<group>"; };
+		B16254AE209B0D750000DCFD /* Gift box@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gift box@1x.png"; sourceTree = "<group>"; };
+		B16254AF209B0D750000DCFD /* History@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "History@2x.png"; sourceTree = "<group>"; };
+		B16254B0209B0D760000DCFD /* Gradient Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gradient Background.jpg"; sourceTree = "<group>"; };
+		B16254B1209B0D760000DCFD /* Hide password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hide password@2x.png"; sourceTree = "<group>"; };
+		B16254B2209B0D760000DCFD /* Log out@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Log out@2x.png"; sourceTree = "<group>"; };
+		B16254B3209B0D770000DCFD /* Hide password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hide password@3x.png"; sourceTree = "<group>"; };
+		B16254C4209B0E000000DCFD /* Contract@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contract@3x.png"; sourceTree = "<group>"; };
+		B16254C5209B0E010000DCFD /* Contract@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contract@1x.png"; sourceTree = "<group>"; };
+		B16254C6209B0E010000DCFD /* Contract@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contract@2x.png"; sourceTree = "<group>"; };
+		B16254CA209B0F980000DCFD /* Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@2x.png"; sourceTree = "<group>"; };
+		B16254CB209B0F980000DCFD /* Profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@3x.png"; sourceTree = "<group>"; };
+		B16254CC209B0F980000DCFD /* Profile@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@1x.png"; sourceTree = "<group>"; };
+		B1644BAE20A538AA00971F0F /* Score box@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Score box@1x.png"; sourceTree = "<group>"; };
+		B1644BAF20A538AB00971F0F /* Score box@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Score box@3x.png"; sourceTree = "<group>"; };
+		B1644BB020A538AB00971F0F /* Score box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Score box@2x.png"; sourceTree = "<group>"; };
+		B1644BB420A53E4200971F0F /* Record next button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record next button@1x.png"; sourceTree = "<group>"; };
+		B1644BB520A53E4200971F0F /* Record next button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record next button@2x.png"; sourceTree = "<group>"; };
+		B1644BB720A53E4400971F0F /* Retry button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry button@1x.png"; sourceTree = "<group>"; };
+		B1644BB820A53E4400971F0F /* Retry button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry button@2x.png"; sourceTree = "<group>"; };
+		B1644BB920A53E4500971F0F /* Retry button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retry button@3x.png"; sourceTree = "<group>"; };
+		B1644BC620A542F000971F0F /* Record next button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Record next button@3x.png"; sourceTree = "<group>"; };
+		B1644BC820A57D5D00971F0F /* CardInfomationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfomationViewController.swift; sourceTree = "<group>"; };
+		B1644BC920A57D5D00971F0F /* CardInfomationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardInfomationViewController.xib; sourceTree = "<group>"; };
+		B1692AAD217DB86C00A00E62 /* Gotit 100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 100@2x.png"; sourceTree = "<group>"; };
+		B1692AAE217DB86D00A00E62 /* Gotit 50@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 50@3x.png"; sourceTree = "<group>"; };
+		B1692AAF217DB86D00A00E62 /* Gotit 50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 50@1x.png"; sourceTree = "<group>"; };
+		B1692AB0217DB86E00A00E62 /* Gotit 50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 50@2x.png"; sourceTree = "<group>"; };
+		B1692AB1217DB86E00A00E62 /* Gotit 100@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 100@3x.png"; sourceTree = "<group>"; };
+		B1692AB2217DB86E00A00E62 /* Gotit 100@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gotit 100@1x.png"; sourceTree = "<group>"; };
+		B16B464F215DED53003CB8EF /* StarGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarGray@2x.png"; sourceTree = "<group>"; };
 		B17701462011A850001DC883 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		B179DAB81FDFD5E50024400C /* Olli Vui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olli Vui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DABB1FDFD5E50024400C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +521,61 @@
 		B179DADE1FDFD5E50024400C /* Olli_VuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olli_VuiUITests.swift; sourceTree = "<group>"; };
 		B179DAE01FDFD5E50024400C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCollectionViewController.swift; sourceTree = "<group>"; };
+		B18CB2AD20A9809600568906 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		B18CB2AE20A9809600568906 /* CustomPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerViewController.xib; sourceTree = "<group>"; };
+		B1A69461208F21B8009FF34A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B1A69462208F21B8009FF34A /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B1A69465208F269F009FF34A /* Uncheck box@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncheck box@1x.png"; sourceTree = "<group>"; };
+		B1A69466208F269F009FF34A /* Uncheck box@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncheck box@3x.png"; sourceTree = "<group>"; };
+		B1A69467208F26A0009FF34A /* Check box@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check box@3x.png"; sourceTree = "<group>"; };
+		B1A69468208F26A0009FF34A /* Check box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check box@2x.png"; sourceTree = "<group>"; };
+		B1A69469208F26A0009FF34A /* Check box@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check box@1x.png"; sourceTree = "<group>"; };
+		B1A6946A208F26A1009FF34A /* Uncheck box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uncheck box@2x.png"; sourceTree = "<group>"; };
+		B1A69471208F297A009FF34A /* Dropdown button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dropdown button@1x.png"; sourceTree = "<group>"; };
+		B1A69472208F297A009FF34A /* Dropdown button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dropdown button@3x.png"; sourceTree = "<group>"; };
+		B1A69473208F297A009FF34A /* Dropdown button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dropdown button@2x.png"; sourceTree = "<group>"; };
+		B1B767D72092BEE700BD31FD /* LoginWithPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		B1B767D82092BEE700BD31FD /* LoginWithPhoneNumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginWithPhoneNumberViewController.xib; sourceTree = "<group>"; };
+		B1B767DB2092C67900BD31FD /* View password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "View password@2x.png"; sourceTree = "<group>"; };
+		B1B767DC2092C67900BD31FD /* View password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "View password@3x.png"; sourceTree = "<group>"; };
+		B1B767DD2092C67A00BD31FD /* View password@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "View password@1x.png"; sourceTree = "<group>"; };
+		B1B767E12092D32400BD31FD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B1B767E22092D32400BD31FD /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B1BAA97D20A2D95400E3C658 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B1BF146220808C570006702F /* GiffStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiffStore.swift; sourceTree = "<group>"; };
+		B1BF14642080BACD0006702F /* TopUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCardViewController.swift; sourceTree = "<group>"; };
+		B1BF14652080BACD0006702F /* TopUpCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopUpCardViewController.xib; sourceTree = "<group>"; };
+		B1BF14682080BBD70006702F /* TopUpCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCardTableViewCell.swift; sourceTree = "<group>"; };
+		B1BF14692080BBD70006702F /* TopUpCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopUpCardTableViewCell.xib; sourceTree = "<group>"; };
+		B1C2428020AAC141003D42C3 /* Stop button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop button@2x.png"; sourceTree = "<group>"; };
+		B1C2428120AAC142003D42C3 /* Stop button@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop button@1x.png"; sourceTree = "<group>"; };
+		B1C2428220AAC143003D42C3 /* Stop button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop button@3x.png"; sourceTree = "<group>"; };
+		B1C2428620AAC506003D42C3 /* Recording red dot@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recording red dot@1x.png"; sourceTree = "<group>"; };
+		B1C2428720AAC507003D42C3 /* Recording red dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recording red dot@2x.png"; sourceTree = "<group>"; };
+		B1C2428820AAC508003D42C3 /* Recording red dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recording red dot@3x.png"; sourceTree = "<group>"; };
+		B1C2429220AC2297003D42C3 /* Instruction 2@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 2@1x.png"; sourceTree = "<group>"; };
+		B1C2429320AC2297003D42C3 /* Instruction 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 1@2x.png"; sourceTree = "<group>"; };
+		B1C2429420AC2298003D42C3 /* Instruction 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 2@2x.png"; sourceTree = "<group>"; };
+		B1C2429520AC2299003D42C3 /* Instruction 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 2@3x.png"; sourceTree = "<group>"; };
+		B1C2429620AC2299003D42C3 /* Instruction 1@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 1@1x.png"; sourceTree = "<group>"; };
+		B1C2429720AC229A003D42C3 /* Instruction 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruction 1@3x.png"; sourceTree = "<group>"; };
+		B1CA024D20B4FED400326C0B /* ClaimGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimGifViewController.swift; sourceTree = "<group>"; };
+		B1CA024E20B4FED400326C0B /* ClaimGifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClaimGifViewController.xib; sourceTree = "<group>"; };
+		B1E7916320AD6C110008615F /* FinishRecordGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRecordGameViewController.swift; sourceTree = "<group>"; };
+		B1E7916420AD6C110008615F /* FinishRecordGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishRecordGameViewController.xib; sourceTree = "<group>"; };
+		B1E7916720AE6FAA0008615F /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		B1E7916820AE6FAA0008615F /* PolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyViewController.xib; sourceTree = "<group>"; };
+		B1E7EB4420C66FAA00916CBC /* GifStoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifStoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1E7EB4520C66FAA00916CBC /* GifStoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifStoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		B1E7EB4820C6723A00916CBC /* Qua_luu_niem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qua_luu_niem@2x.png"; sourceTree = "<group>"; };
+		B1E7EB4920C6723B00916CBC /* Qua_luu_niem@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qua_luu_niem@3x.png"; sourceTree = "<group>"; };
+		B1E7EB4A20C6723B00916CBC /* Qua_luu_niem@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qua_luu_niem@1x.png"; sourceTree = "<group>"; };
+		B1E8BA6020D8FEAF006F9AF6 /* MissingPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingPasswordViewController.swift; sourceTree = "<group>"; };
+		B1E8BA6120D8FEAF006F9AF6 /* MissingPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissingPasswordViewController.xib; sourceTree = "<group>"; };
+		B1F12F6E215B6C2700327147 /* HelpFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpFirstViewController.swift; sourceTree = "<group>"; };
+		B1F12F6F215B6C2700327147 /* HelpFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpFirstViewController.xib; sourceTree = "<group>"; };
+		B1F12F72215B8C1300327147 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
+		B1F12F73215B8C1300327147 /* JobDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
 		BCF77AEE68842578CBC5D64B /* Pods-Olli Vui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli Vui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui.release.xcconfig"; sourceTree = "<group>"; };
 		CF731AAC86FBC0763786F8A9 /* Pods-Olli VuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EE8E34B37F7CF5978CB69C0F /* Pods-Olli VuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olli VuiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,14 +641,81 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B1210E95216C9C5400C2B8CC /* About */ = {
+			isa = PBXGroup;
+			children = (
+				B1210E9A216CB12D00C2B8CC /* AboutViewController.swift */,
+				B1210E9B216CB12D00C2B8CC /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		B1254FD41FE106DF008533BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B107B10620031D8F0012029D /* LoginMD.swift */,
 				B107B108200323880012029D /* AccountMD.swift */,
 				B125351D200717D5000B6E66 /* GameMD.swift */,
+				B13F7D002071D11E00904988 /* RecordScriptMD.swift */,
+				B14ED427207DB94D00DEFCC9 /* gifMD.swift */,
+				B1BF146220808C570006702F /* GiffStore.swift */,
+				B158E4CF2084AD350069F75C /* MobileCardMD.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B12681952085A22100EFCC59 /* TopUp */ = {
+			isa = PBXGroup;
+			children = (
+				B1BF14652080BACD0006702F /* TopUpCardViewController.xib */,
+				B1BF14692080BBD70006702F /* TopUpCardTableViewCell.xib */,
+			);
+			path = TopUp;
+			sourceTree = "<group>";
+		};
+		B12681962085A24B00EFCC59 /* CustomViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				B12681972085A2A900EFCC59 /* CustomHeaderViewViewController.swift */,
+				B12681982085A2A900EFCC59 /* CustomHeaderViewViewController.xib */,
+				B1515DB4208ED2AA00E93319 /* CustomLeftMenuViewController.swift */,
+				B1515DB5208ED2AA00E93319 /* CustomLeftMenuViewController.xib */,
+				B1A69461208F21B8009FF34A /* FirstViewController.swift */,
+				B1A69462208F21B8009FF34A /* FirstViewController.xib */,
+				B18CB2AD20A9809600568906 /* CustomPickerViewController.swift */,
+				B18CB2AE20A9809600568906 /* CustomPickerViewController.xib */,
+				B1E7EB4420C66FAA00916CBC /* GifStoreCollectionViewCell.swift */,
+				B1E7EB4520C66FAA00916CBC /* GifStoreCollectionViewCell.xib */,
+			);
+			path = CustomViewControler;
+			sourceTree = "<group>";
+		};
+		B1319F56215C73A4008ADF96 /* JobDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B1F12F72215B8C1300327147 /* JobDetailViewController.swift */,
+				B1F12F73215B8C1300327147 /* JobDetailViewController.xib */,
+				B1319F57215C7419008ADF96 /* JobDetailTableViewCell.swift */,
+				B1319F58215C7419008ADF96 /* JobDetailTableViewCell.xib */,
+			);
+			path = JobDetail;
+			sourceTree = "<group>";
+		};
+		B14ED44D207E04A000DEFCC9 /* TopUp */ = {
+			isa = PBXGroup;
+			children = (
+				B1BF14642080BACD0006702F /* TopUpCardViewController.swift */,
+				B1BF14682080BBD70006702F /* TopUpCardTableViewCell.swift */,
+				4DD23C2620A3912B00595481 /* CollectionCardViewController.swift */,
+				4DD23C2720A3912B00595481 /* CollectionCardViewController.xib */,
+				4DD23C2A20A3971E00595481 /* CardCollectionViewCell.swift */,
+				4DD23C2B20A3971E00595481 /* CardCollectionViewCell.xib */,
+				B1644BC820A57D5D00971F0F /* CardInfomationViewController.swift */,
+				B1644BC920A57D5D00971F0F /* CardInfomationViewController.xib */,
+				B142C64E2167411B008E2922 /* CardInformationTableViewCell.swift */,
+				B142C64F2167411B008E2922 /* CardInformationTableViewCell.xib */,
+			);
+			path = TopUp;
 			sourceTree = "<group>";
 		};
 		B15AD2A3200CBC2D005E4ADE /* DataConnector */ = {
@@ -240,9 +727,29 @@
 			path = DataConnector;
 			sourceTree = "<group>";
 		};
+		B16B464E215DDBB3003CB8EF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B16B4651215E30EC003CB8EF /* ClaimGifHistory */ = {
+			isa = PBXGroup;
+			children = (
+				B12649FC2161C626005824C1 /* ClaimHistoryViewController.swift */,
+				B12649FD2161C626005824C1 /* ClaimHistoryViewController.xib */,
+				B1264A002161C7EC005824C1 /* ClaimHistoryTableViewCell.swift */,
+				B1264A012161C7EC005824C1 /* ClaimHistoryTableViewCell.xib */,
+			);
+			path = ClaimGifHistory;
+			sourceTree = "<group>";
+		};
 		B179DAAF1FDFD5E50024400C = {
 			isa = PBXGroup;
 			children = (
+				B14AE87320C4D49300F8911A /* tinh.json */,
+				B145019720771FEA008FD7B7 /* GoogleService-Info.plist */,
 				B179DABA1FDFD5E50024400C /* Olli Vui */,
 				B179DAD21FDFD5E50024400C /* Olli VuiTests */,
 				B179DADD1FDFD5E50024400C /* Olli VuiUITests */,
@@ -280,7 +787,6 @@
 				B179DAC51FDFD5E50024400C /* Assets.xcassets */,
 				B179DAC71FDFD5E50024400C /* LaunchScreen.storyboard */,
 				B179DACA1FDFD5E50024400C /* Info.plist */,
-				B1159E321FFB41BD00804A59 /* GoogleService-Info.plist */,
 				B179DAC21FDFD5E50024400C /* Olli_Vui.xcdatamodeld */,
 			);
 			path = "Olli Vui";
@@ -308,6 +814,7 @@
 			isa = PBXGroup;
 			children = (
 				B125352120074191000B6E66 /* GlowingLabel.swift */,
+				B1BAA97D20A2D95400E3C658 /* Utility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -315,6 +822,14 @@
 		B179DAED1FDFDF9F0024400C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B1210E95216C9C5400C2B8CC /* About */,
+				B16B4651215E30EC003CB8EF /* ClaimGifHistory */,
+				B16B464E215DDBB3003CB8EF /* UserInfo */,
+				B1319F56215C73A4008ADF96 /* JobDetail */,
+				B1E8BA5F20D8FE85006F9AF6 /* missingPassword */,
+				B1CA024C20B4FEA400326C0B /* claimGif */,
+				B12681962085A24B00EFCC59 /* CustomViewControler */,
+				B14ED44D207E04A000DEFCC9 /* TopUp */,
 				B179DAF01FDFE04F0024400C /* MainScreenCollectionViewController.swift */,
 				B1254FD01FE0DD64008533BB /* MainSceenCollectionViewCell.swift */,
 				B1254FD51FE1114C008533BB /* GameViewController.swift */,
@@ -322,6 +837,20 @@
 				B156060D1FE2600900B41728 /* RewardStoreTableViewCell.swift */,
 				B107B0EF1FFDCFF70012029D /* LoginViewController.swift */,
 				B12535432008B7A7000B6E66 /* HelpViewController.swift */,
+				B1B767D72092BEE700BD31FD /* LoginWithPhoneNumberViewController.swift */,
+				B1B767D82092BEE700BD31FD /* LoginWithPhoneNumberViewController.xib */,
+				B1B767E12092D32400BD31FD /* RegisterViewController.swift */,
+				B1B767E22092D32400BD31FD /* RegisterViewController.xib */,
+				4D9BFEF0209FB67E00593C4D /* ProfileViewController.swift */,
+				4D9BFEF1209FB67E00593C4D /* ProfileViewController.xib */,
+				B15215A4209FF2920029938C /* ChangePasswordViewController.swift */,
+				B15215A5209FF2920029938C /* ChangePasswordViewController.xib */,
+				B1E7916320AD6C110008615F /* FinishRecordGameViewController.swift */,
+				B1E7916420AD6C110008615F /* FinishRecordGameViewController.xib */,
+				B1E7916720AE6FAA0008615F /* PolicyViewController.swift */,
+				B1E7916820AE6FAA0008615F /* PolicyViewController.xib */,
+				B1F12F6E215B6C2700327147 /* HelpFirstViewController.swift */,
+				B1F12F6F215B6C2700327147 /* HelpFirstViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,6 +858,7 @@
 		B179DAEE1FDFDFB40024400C /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				B12681952085A22100EFCC59 /* TopUp */,
 				B12535442008B7A7000B6E66 /* HelpViewController.xib */,
 				B107B0F01FFDCFF70012029D /* LoginViewController.xib */,
 				B156060E1FE2600900B41728 /* RewardStoreTableViewCell.xib */,
@@ -342,6 +872,160 @@
 		B179DAEF1FDFDFBF0024400C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B1692AAF217DB86D00A00E62 /* Gotit 50@1x.png */,
+				B1692AB0217DB86E00A00E62 /* Gotit 50@2x.png */,
+				B1692AAE217DB86D00A00E62 /* Gotit 50@3x.png */,
+				B1692AB2217DB86E00A00E62 /* Gotit 100@1x.png */,
+				B1692AAD217DB86C00A00E62 /* Gotit 100@2x.png */,
+				B1692AB1217DB86E00A00E62 /* Gotit 100@3x.png */,
+				B1210E9F216CB2D500C2B8CC /* About@1x.png */,
+				B1210EA0216CB2D500C2B8CC /* About@2x.png */,
+				B1210E9E216CB2D500C2B8CC /* About@3x.png */,
+				B1210E8F216C69C400C2B8CC /* Icon_tien_mat@1x.png */,
+				B1210E90216C69C500C2B8CC /* Icon_tien_mat@2x.png */,
+				B1210E91216C69C500C2B8CC /* Icon_tien_mat@3x.png */,
+				B1308D0721636D30004F7BBE /* Star-gray@1x.png */,
+				B1308D0321636D2E004F7BBE /* Star-gray@2x.png */,
+				B1308D0821636D30004F7BBE /* Star-gray@3x.png */,
+				B1308D0621636D2F004F7BBE /* Star-yellow@1x.png */,
+				B1308D0521636D2F004F7BBE /* Star-yellow@2x.png */,
+				B1308D0421636D2E004F7BBE /* Star-yellow@3x.png */,
+				B1308D01216318DB004F7BBE /* index.html */,
+				B1264A042161DA6D005824C1 /* BackRevert@2x.png */,
+				B16B464F215DED53003CB8EF /* StarGray@2x.png */,
+				B1319F5B215CE2CC008ADF96 /* Help@1x.png */,
+				B1319F5C215CE2CD008ADF96 /* Help@2x.png */,
+				B1319F5D215CE2CD008ADF96 /* Help@3x.png */,
+				B13F445420DB45F0004B312B /* Record card normal@1x.png */,
+				B13F445020DB45F0004B312B /* Record card normal@2x.png */,
+				B13F445520DB45F1004B312B /* Record card normal@3x.png */,
+				B13F445220DB45F0004B312B /* Record card pressed@1x.png */,
+				B13F445320DB45F0004B312B /* Record card pressed@2x.png */,
+				B13F445120DB45F0004B312B /* Record card pressed@3x.png */,
+				B130779F20D8A87F00BF01CE /* Mobifone big logo@1x.png */,
+				B130779720D8A87C00BF01CE /* Mobifone big logo@2x.png */,
+				B130779D20D8A87F00BF01CE /* Mobifone big logo@3x.png */,
+				B130779C20D8A87E00BF01CE /* Viettel big logo@1x.png */,
+				B130779E20D8A87F00BF01CE /* Viettel big logo@2x.png */,
+				B130779920D8A87D00BF01CE /* Viettel big logo@3x.png */,
+				B130779A20D8A87D00BF01CE /* Vinaphone big logo@1x.png */,
+				B130779820D8A87D00BF01CE /* Vinaphone big logo@2x.png */,
+				B130779B20D8A87E00BF01CE /* Vinaphone big logo@3x.png */,
+				B13F1BA020D37BE700A94057 /* Mobifone 202 @1x.png */,
+				B13F1BAB20D37BEB00A94057 /* Mobifone 202 @2x.png */,
+				B13F1BAC20D37BEB00A94057 /* Mobifone 202 @3x.png */,
+				B13F1BAA20D37BEA00A94057 /* Mobifone 502 @1x.png */,
+				B13F1BA520D37BE900A94057 /* Mobifone 502 @2x.png */,
+				B13F1BA120D37BE700A94057 /* Mobifone 502 @3x.png */,
+				B13F1BA820D37BEA00A94057 /* Viettel 202 @1x.png */,
+				B13F1BA220D37BE700A94057 /* Viettel 202 @2x.png */,
+				B13F1BA720D37BE900A94057 /* Viettel 202 @3x.png */,
+				B13F1BA420D37BE800A94057 /* Viettel 502 @1x.png */,
+				B13F1BAD20D37BEC00A94057 /* Viettel 502 @2x.png */,
+				B13F1B9F20D37BE600A94057 /* Viettel 502 @3x.png */,
+				B13F1BA320D37BE800A94057 /* Vinaphone 202 @1x.png */,
+				B13F1BAE20D37BEC00A94057 /* Vinaphone 202 @2x.png */,
+				B13F1BAF20D37BEC00A94057 /* Vinaphone 202 @3x.png */,
+				B13F1BB020D37BED00A94057 /* Vinaphone 502 @1x.png */,
+				B13F1BA920D37BEA00A94057 /* Vinaphone 502 @2x.png */,
+				B13F1BA620D37BE900A94057 /* Vinaphone 502 @3x.png */,
+				B1436C8E20D2053B0044259F /* Icon_ma_the_di_dong@1x.png */,
+				B1436C8C20D2053B0044259F /* Icon_ma_the_di_dong@2x.png */,
+				B1436C9020D2053C0044259F /* Icon_ma_the_di_dong@3x.png */,
+				B1436C8F20D2053C0044259F /* Icon_qua_luu_niem@1x.png */,
+				B1436C9120D2053C0044259F /* Icon_qua_luu_niem@2x.png */,
+				B1436C8D20D2053B0044259F /* Icon_qua_luu_niem@3x.png */,
+				B1E7EB4A20C6723B00916CBC /* Qua_luu_niem@1x.png */,
+				B1E7EB4820C6723A00916CBC /* Qua_luu_niem@2x.png */,
+				B1E7EB4920C6723B00916CBC /* Qua_luu_niem@3x.png */,
+				B11A856820BFFCF000564E10 /* Back btn.svg */,
+				B11A856420BFFCF000564E10 /* Next btn.svg */,
+				B11A856A20BFFCF100564E10 /* Pause btn.svg */,
+				B11A856320BFFCEF00564E10 /* Retry btn.svg */,
+				B11A856920BFFCF000564E10 /* Star.svg */,
+				B11A856520BFFCF000564E10 /* Wave.svg */,
+				B11A856620BFFCF000564E10 /* Wave@2x.png */,
+				B130A32420BD4E700001AE43 /* Menu button@1x.png */,
+				B130A32220BD4E6E0001AE43 /* Menu button@2x.png */,
+				B130A32320BD4E6F0001AE43 /* Menu button@3x.png */,
+				B1C2429620AC2299003D42C3 /* Instruction 1@1x.png */,
+				B1C2429320AC2297003D42C3 /* Instruction 1@2x.png */,
+				B1C2429720AC229A003D42C3 /* Instruction 1@3x.png */,
+				B1C2429220AC2297003D42C3 /* Instruction 2@1x.png */,
+				B1C2429420AC2298003D42C3 /* Instruction 2@2x.png */,
+				B1C2429520AC2299003D42C3 /* Instruction 2@3x.png */,
+				B1C2428620AAC506003D42C3 /* Recording red dot@1x.png */,
+				B1C2428720AAC507003D42C3 /* Recording red dot@2x.png */,
+				B1C2428820AAC508003D42C3 /* Recording red dot@3x.png */,
+				B1C2428120AAC142003D42C3 /* Stop button@1x.png */,
+				B1C2428020AAC141003D42C3 /* Stop button@2x.png */,
+				B1C2428220AAC143003D42C3 /* Stop button@3x.png */,
+				B1644BC620A542F000971F0F /* Record next button@3x.png */,
+				B1644BB420A53E4200971F0F /* Record next button@1x.png */,
+				B1644BB520A53E4200971F0F /* Record next button@2x.png */,
+				B1644BB720A53E4400971F0F /* Retry button@1x.png */,
+				B1644BB820A53E4400971F0F /* Retry button@2x.png */,
+				B1644BB920A53E4500971F0F /* Retry button@3x.png */,
+				B1644BAE20A538AA00971F0F /* Score box@1x.png */,
+				B1644BB020A538AB00971F0F /* Score box@2x.png */,
+				B1644BAF20A538AB00971F0F /* Score box@3x.png */,
+				B15215A8209FF45D0029938C /* Back button@1x.png */,
+				B15215A9209FF45D0029938C /* Back button@2x.png */,
+				B15215AA209FF45E0029938C /* Back button@3x.png */,
+				B15ECA88209C55230083A5EE /* Home@1x.png */,
+				B15ECA89209C55240083A5EE /* Home@2x.png */,
+				B15ECA87209C55220083A5EE /* Home@3x.png */,
+				B16254CC209B0F980000DCFD /* Profile@1x.png */,
+				B16254CA209B0F980000DCFD /* Profile@2x.png */,
+				B16254CB209B0F980000DCFD /* Profile@3x.png */,
+				B16254C5209B0E010000DCFD /* Contract@1x.png */,
+				B16254C6209B0E010000DCFD /* Contract@2x.png */,
+				B16254C4209B0E000000DCFD /* Contract@3x.png */,
+				B16254AE209B0D750000DCFD /* Gift box@1x.png */,
+				B16254AA209B0D730000DCFD /* Gift box@3x.png */,
+				B16254B0209B0D760000DCFD /* Gradient Background.jpg */,
+				B16254A5209B0D710000DCFD /* Hide password@1x.png */,
+				B16254B1209B0D760000DCFD /* Hide password@2x.png */,
+				B16254B3209B0D770000DCFD /* Hide password@3x.png */,
+				B16254AD209B0D740000DCFD /* History@1x.png */,
+				B16254AF209B0D750000DCFD /* History@2x.png */,
+				B16254A9209B0D730000DCFD /* History@3x.png */,
+				B16254A4209B0D710000DCFD /* Lock password@1x.png */,
+				B16254A6209B0D720000DCFD /* Lock password@2x.png */,
+				B16254A8209B0D720000DCFD /* Lock password@3x.png */,
+				B16254AB209B0D740000DCFD /* Log out@1x.png */,
+				B16254B2209B0D760000DCFD /* Log out@2x.png */,
+				B16254AC209B0D740000DCFD /* Log out@3x.png */,
+				B1625499209B03490000DCFD /* Avatar Female@1x.png */,
+				B162549B209B034A0000DCFD /* Avatar Female@2x.png */,
+				B162549A209B034A0000DCFD /* Avatar Female@3x.png */,
+				B162549D209B034C0000DCFD /* Avatar Male@1x.png */,
+				B162549C209B034B0000DCFD /* Avatar Male@2x.png */,
+				B1625498209B03480000DCFD /* Avatar Male@3x.png */,
+				B1A69471208F297A009FF34A /* Dropdown button@1x.png */,
+				B1B767DD2092C67A00BD31FD /* View password@1x.png */,
+				B1B767DB2092C67900BD31FD /* View password@2x.png */,
+				B1B767DC2092C67900BD31FD /* View password@3x.png */,
+				B1A69473208F297A009FF34A /* Dropdown button@2x.png */,
+				B1A69472208F297A009FF34A /* Dropdown button@3x.png */,
+				B1A69469208F26A0009FF34A /* Check box@1x.png */,
+				B1A69468208F26A0009FF34A /* Check box@2x.png */,
+				B1A69467208F26A0009FF34A /* Check box@3x.png */,
+				B1A69465208F269F009FF34A /* Uncheck box@1x.png */,
+				B1A6946A208F26A1009FF34A /* Uncheck box@2x.png */,
+				B1A69466208F269F009FF34A /* Uncheck box@3x.png */,
+				B12681A12085AD9000EFCC59 /* Giftbox@2x.png */,
+				B126819B2085AA0800EFCC59 /* rightmenuLast.png */,
+				B158E4CD2084551A0069F75C /* vinaphone.png */,
+				B158E4CB208454010069F75C /* mobifone.png */,
+				B14ED442207DCCF000DEFCC9 /* radio-of-button.png */,
+				B14ED441207DCCF000DEFCC9 /* radio-on-button.png */,
+				B14ED43F207DCB5000DEFCC9 /* viettel_tran.png */,
+				B14ED430207DC46600DEFCC9 /* up128.png */,
+				B14ED42F207DC46500DEFCC9 /* up256.png */,
+				B14ED42D207DBFA300DEFCC9 /* up.png */,
+				B14ED429207DBE6F00DEFCC9 /* up16.png */,
+				B14ED42A207DBE7000DEFCC9 /* up24.png */,
 				B125352320075DE2000B6E66 /* Back btn@2x.png */,
 				B125353220075DE4000B6E66 /* Back btn@2x.svg */,
 				B125352C20075DE4000B6E66 /* Gift box@2x.png */,
@@ -372,6 +1056,24 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B1CA024C20B4FEA400326C0B /* claimGif */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA024D20B4FED400326C0B /* ClaimGifViewController.swift */,
+				B1CA024E20B4FED400326C0B /* ClaimGifViewController.xib */,
+			);
+			path = claimGif;
+			sourceTree = "<group>";
+		};
+		B1E8BA5F20D8FE85006F9AF6 /* missingPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B1E8BA6020D8FEAF006F9AF6 /* MissingPasswordViewController.swift */,
+				B1E8BA6120D8FEAF006F9AF6 /* MissingPasswordViewController.xib */,
+			);
+			path = missingPassword;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +1087,7 @@
 				B179DAB61FDFD5E50024400C /* Resources */,
 				9DF7B0B9DD246039EA22163E /* [CP] Embed Pods Frameworks */,
 				2F2B0AC960254F0BDBD592E1 /* [CP] Copy Pods Resources */,
+				B18CB2AC20A9267B00568906 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -403,8 +1106,6 @@
 				B179DACB1FDFD5E50024400C /* Sources */,
 				B179DACC1FDFD5E50024400C /* Frameworks */,
 				B179DACD1FDFD5E50024400C /* Resources */,
-				E9B3013066CCEC36053EFA1A /* [CP] Embed Pods Frameworks */,
-				7D454B7D4EBF206F7028ABD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,8 +1125,6 @@
 				B179DAD61FDFD5E50024400C /* Sources */,
 				B179DAD71FDFD5E50024400C /* Frameworks */,
 				B179DAD81FDFD5E50024400C /* Resources */,
-				FAC9B936D6E788C83F139699 /* [CP] Embed Pods Frameworks */,
-				57D340CCB9DE237D3B2AF06D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -494,42 +1193,222 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14ED444207DCCF000DEFCC9 /* radio-of-button.png in Resources */,
+				B15ECA8B209C55240083A5EE /* Home@1x.png in Resources */,
+				B14ED432207DC46600DEFCC9 /* up128.png in Resources */,
+				B13F1BBC20D37BED00A94057 /* Mobifone 502 @1x.png in Resources */,
+				B1E7916620AD6C110008615F /* FinishRecordGameViewController.xib in Resources */,
 				B125353620075DE4000B6E66 /* User icon@2x.svg in Resources */,
+				B1E7EB4C20C6723B00916CBC /* Qua_luu_niem@3x.png in Resources */,
+				B16254BD209B0D770000DCFD /* History@1x.png in Resources */,
 				B107B0FD1FFDD1900012029D /* Google logo.png in Resources */,
+				B1436C9320D2053C0044259F /* Icon_qua_luu_niem@3x.png in Resources */,
+				B1E7EB4720C66FAA00916CBC /* GifStoreCollectionViewCell.xib in Resources */,
 				B107B0F91FFDD1900012029D /* User icon.png in Resources */,
+				B1B767DF2092C67A00BD31FD /* View password@3x.png in Resources */,
+				B1644BBB20A53E4500971F0F /* Record next button@2x.png in Resources */,
+				B13F1BB120D37BED00A94057 /* Viettel 502 @3x.png in Resources */,
+				B15215AC209FF45E0029938C /* Back button@2x.png in Resources */,
+				B13F1BBF20D37BED00A94057 /* Viettel 502 @2x.png in Resources */,
+				B158E4CC208454010069F75C /* mobifone.png in Resources */,
+				B1F12F71215B6C2700327147 /* HelpFirstViewController.xib in Resources */,
+				B1C2429820AC229A003D42C3 /* Instruction 2@1x.png in Resources */,
+				B1692AB6217DB86F00A00E62 /* Gotit 50@2x.png in Resources */,
+				B11A856C20BFFCF100564E10 /* Next btn.svg in Resources */,
+				B13F1BB420D37BED00A94057 /* Viettel 202 @2x.png in Resources */,
+				B1319F5E215CE2CD008ADF96 /* Help@1x.png in Resources */,
 				B125354020075DE4000B6E66 /* Next btn@2x.svg in Resources */,
 				B179DAC91FDFD5E50024400C /* LaunchScreen.storyboard in Resources */,
+				B16254BB209B0D770000DCFD /* Log out@1x.png in Resources */,
+				B130A32620BD4E700001AE43 /* Menu button@3x.png in Resources */,
+				B1210E93216C69C500C2B8CC /* Icon_tien_mat@2x.png in Resources */,
+				B16254A0209B034D0000DCFD /* Avatar Female@3x.png in Resources */,
 				B125353420075DE4000B6E66 /* Retry btn@2x.png in Resources */,
+				4D9BFEF3209FB67E00593C4D /* ProfileViewController.xib in Resources */,
+				B1644BC720A542F000971F0F /* Record next button@3x.png in Resources */,
+				B1692AB3217DB86F00A00E62 /* Gotit 100@2x.png in Resources */,
+				B1BF146B2080BBD70006702F /* TopUpCardTableViewCell.xib in Resources */,
 				B125353520075DE4000B6E66 /* Gift box@2x.svg in Resources */,
+				B16254B8209B0D770000DCFD /* Lock password@3x.png in Resources */,
+				B1308D0A21636D30004F7BBE /* Star-yellow@3x.png in Resources */,
+				B1644BB320A538AB00971F0F /* Score box@2x.png in Resources */,
+				B1436C9220D2053C0044259F /* Icon_ma_the_di_dong@2x.png in Resources */,
 				B125354120075DE4000B6E66 /* User icon@2x.png in Resources */,
+				B16254BA209B0D770000DCFD /* Gift box@3x.png in Resources */,
 				B125353B20075DE4000B6E66 /* Pause btn@2x.svg in Resources */,
+				B1308D0B21636D30004F7BBE /* Star-yellow@2x.png in Resources */,
+				B16B4650215DED53003CB8EF /* StarGray@2x.png in Resources */,
+				B1C2429C20AC229A003D42C3 /* Instruction 1@1x.png in Resources */,
+				B1A6946E208F26A1009FF34A /* Check box@2x.png in Resources */,
+				B13F1BBE20D37BED00A94057 /* Mobifone 202 @3x.png in Resources */,
+				B1264A052161DA6D005824C1 /* BackRevert@2x.png in Resources */,
+				B11A857220BFFCF100564E10 /* Pause btn.svg in Resources */,
+				B19BF22520873558006BEC11 /* GoogleService-Info.plist in Resources */,
+				B1515DB7208ED2AA00E93319 /* CustomLeftMenuViewController.xib in Resources */,
+				B1C2428520AAC143003D42C3 /* Stop button@3x.png in Resources */,
 				B125353A20075DE4000B6E66 /* Next btn@2x.png in Resources */,
+				B1C2428320AAC143003D42C3 /* Stop button@2x.png in Resources */,
+				B15215A7209FF2920029938C /* ChangePasswordViewController.xib in Resources */,
+				B1A69464208F21B8009FF34A /* FirstViewController.xib in Resources */,
+				B13F445620DB45F1004B312B /* Record card normal@2x.png in Resources */,
+				B13F1BB320D37BED00A94057 /* Mobifone 502 @3x.png in Resources */,
+				B1308D0D21636D30004F7BBE /* Star-gray@1x.png in Resources */,
+				B16254B5209B0D770000DCFD /* Hide password@1x.png in Resources */,
+				B11A856E20BFFCF100564E10 /* Wave@2x.png in Resources */,
 				B107B0FA1FFDD1900012029D /* Password icon.png in Resources */,
+				B16254A2209B034D0000DCFD /* Avatar Male@2x.png in Resources */,
+				B13F445820DB45F1004B312B /* Record card pressed@1x.png in Resources */,
+				B1644BB220A538AB00971F0F /* Score box@3x.png in Resources */,
+				B1F12F75215B8C1300327147 /* JobDetailViewController.xib in Resources */,
+				B1308D0E21636D30004F7BBE /* Star-gray@3x.png in Resources */,
+				B1210E92216C69C500C2B8CC /* Icon_tien_mat@1x.png in Resources */,
+				B1210EA2216CB2D600C2B8CC /* About@1x.png in Resources */,
+				B1319F5A215C7419008ADF96 /* JobDetailTableViewCell.xib in Resources */,
+				B13077A620D8A88000BF01CE /* Mobifone big logo@3x.png in Resources */,
+				B1E7EB4B20C6723B00916CBC /* Qua_luu_niem@2x.png in Resources */,
+				B13077A220D8A88000BF01CE /* Viettel big logo@3x.png in Resources */,
+				B14AE87420C4D49300F8911A /* tinh.json in Resources */,
+				B1A6946B208F26A1009FF34A /* Uncheck box@1x.png in Resources */,
+				4DD23C2920A3912B00595481 /* CollectionCardViewController.xib in Resources */,
+				B16254CF209B0F990000DCFD /* Profile@1x.png in Resources */,
+				B14ED443207DCCF000DEFCC9 /* radio-on-button.png in Resources */,
 				B125353D20075DE4000B6E66 /* Star@2x.svg in Resources */,
+				B16254C7209B0E020000DCFD /* Contract@3x.png in Resources */,
+				B1A6946D208F26A1009FF34A /* Check box@3x.png in Resources */,
+				B18CB2B020A9809600568906 /* CustomPickerViewController.xib in Resources */,
+				B142C6512167411B008E2922 /* CardInformationTableViewCell.xib in Resources */,
 				B125353720075DE4000B6E66 /* Pause btn@2x.png in Resources */,
+				B13077A820D8A88000BF01CE /* Mobifone big logo@1x.png in Resources */,
 				B125353F20075DE4000B6E66 /* Menu icon@2x.png in Resources */,
+				B1692AB7217DB86F00A00E62 /* Gotit 100@3x.png in Resources */,
+				B162549E209B034D0000DCFD /* Avatar Male@3x.png in Resources */,
+				B1210EA1216CB2D600C2B8CC /* About@3x.png in Resources */,
+				B14ED431207DC46600DEFCC9 /* up256.png in Resources */,
+				B1C2428920AAC508003D42C3 /* Recording red dot@1x.png in Resources */,
+				B13F1BB920D37BED00A94057 /* Viettel 202 @3x.png in Resources */,
 				B125354220075DE4000B6E66 /* Back btn@2x.svg in Resources */,
+				B1CA025020B4FED400326C0B /* ClaimGifViewController.xib in Resources */,
+				B1644BBF20A53E4500971F0F /* Retry button@3x.png in Resources */,
 				B125353C20075DE4000B6E66 /* Gift box@2x.png in Resources */,
 				B107B1011FFE38B80012029D /* Facebook button.png in Resources */,
-				B1159E331FFB41BD00804A59 /* GoogleService-Info.plist in Resources */,
+				B11A857120BFFCF100564E10 /* Star.svg in Resources */,
+				B13F1BBB20D37BED00A94057 /* Vinaphone 502 @2x.png in Resources */,
+				B13F1BC020D37BED00A94057 /* Vinaphone 202 @2x.png in Resources */,
 				B125353920075DE4000B6E66 /* Menu icon@2x.svg in Resources */,
+				B12681A22085AD9000EFCC59 /* Giftbox@2x.png in Resources */,
+				B16254C1209B0D770000DCFD /* Hide password@2x.png in Resources */,
+				B13F1BB720D37BED00A94057 /* Mobifone 502 @2x.png in Resources */,
+				B15215AD209FF45E0029938C /* Back button@3x.png in Resources */,
+				B1210E94216C69C500C2B8CC /* Icon_tien_mat@3x.png in Resources */,
+				B1B767DE2092C67A00BD31FD /* View password@2x.png in Resources */,
+				B1E8BA6320D8FEAF006F9AF6 /* MissingPasswordViewController.xib in Resources */,
+				B1692AB5217DB86F00A00E62 /* Gotit 50@1x.png in Resources */,
+				B16254C3209B0D770000DCFD /* Hide password@3x.png in Resources */,
 				B125353E20075DE4000B6E66 /* Star@2x.png in Resources */,
+				B1210EA3216CB2D600C2B8CC /* About@2x.png in Resources */,
+				B126819A2085A2A900EFCC59 /* CustomHeaderViewViewController.xib in Resources */,
+				B158E4CE2084551A0069F75C /* vinaphone.png in Resources */,
+				B11A856D20BFFCF100564E10 /* Wave.svg in Resources */,
+				B1644BBD20A53E4500971F0F /* Retry button@1x.png in Resources */,
+				B130A32720BD4E700001AE43 /* Menu button@1x.png in Resources */,
+				B13F1BBD20D37BED00A94057 /* Mobifone 202 @2x.png in Resources */,
+				B1644BCB20A57D5D00971F0F /* CardInfomationViewController.xib in Resources */,
+				B13F1BC220D37BED00A94057 /* Vinaphone 502 @1x.png in Resources */,
 				B107B0F21FFDCFF70012029D /* LoginViewController.xib in Resources */,
 				B1159E3B1FFCB72F00804A59 /* Wave.png in Resources */,
+				B1308D0921636D30004F7BBE /* Star-gray@2x.png in Resources */,
+				B13F445B20DB45F1004B312B /* Record card normal@3x.png in Resources */,
+				B13F1BC120D37BED00A94057 /* Vinaphone 202 @3x.png in Resources */,
+				B13077A020D8A88000BF01CE /* Mobifone big logo@2x.png in Resources */,
+				B15ECA8A209C55240083A5EE /* Home@3x.png in Resources */,
+				B13077A720D8A88000BF01CE /* Viettel big logo@2x.png in Resources */,
+				B1644BBA20A53E4500971F0F /* Record next button@1x.png in Resources */,
+				B16254C9209B0E020000DCFD /* Contract@2x.png in Resources */,
+				B1A69470208F26A1009FF34A /* Uncheck box@2x.png in Resources */,
+				B1C2429A20AC229A003D42C3 /* Instruction 2@2x.png in Resources */,
+				B13077A520D8A88000BF01CE /* Viettel big logo@1x.png in Resources */,
+				B11A857020BFFCF100564E10 /* Back btn.svg in Resources */,
+				B13077A120D8A88000BF01CE /* Vinaphone big logo@2x.png in Resources */,
+				B13F1BB620D37BED00A94057 /* Viettel 502 @1x.png in Resources */,
 				B107B0FC1FFDD1900012029D /* FB Logo.png in Resources */,
+				B13F1BB220D37BED00A94057 /* Mobifone 202 @1x.png in Resources */,
+				B162549F209B034D0000DCFD /* Avatar Female@1x.png in Resources */,
 				B12535462008B7A7000B6E66 /* HelpViewController.xib in Resources */,
+				B1319F5F215CE2CD008ADF96 /* Help@2x.png in Resources */,
+				B16254BF209B0D770000DCFD /* History@2x.png in Resources */,
+				B16254C2209B0D770000DCFD /* Log out@2x.png in Resources */,
+				B1264A032161C7EC005824C1 /* ClaimHistoryTableViewCell.xib in Resources */,
+				B1436C9420D2053C0044259F /* Icon_ma_the_di_dong@1x.png in Resources */,
+				B1C2428A20AAC508003D42C3 /* Recording red dot@2x.png in Resources */,
+				B1A69474208F297B009FF34A /* Dropdown button@1x.png in Resources */,
+				B1C2428420AAC143003D42C3 /* Stop button@1x.png in Resources */,
+				B1BF14672080BACD0006702F /* TopUpCardViewController.xib in Resources */,
+				B15215AB209FF45E0029938C /* Back button@1x.png in Resources */,
 				B107B1021FFE38B80012029D /* Google button.png in Resources */,
+				B13F445920DB45F1004B312B /* Record card pressed@2x.png in Resources */,
+				B1A69476208F297B009FF34A /* Dropdown button@2x.png in Resources */,
+				B1436C9620D2053C0044259F /* Icon_ma_the_di_dong@3x.png in Resources */,
+				B13077A420D8A88000BF01CE /* Vinaphone big logo@3x.png in Resources */,
 				B179DAC61FDFD5E50024400C /* Assets.xcassets in Resources */,
 				B1254FD31FE0DD64008533BB /* MainSceenCollectionViewCell.xib in Resources */,
+				B15ECA8C209C55240083A5EE /* Home@2x.png in Resources */,
+				B1A6946C208F26A1009FF34A /* Uncheck box@3x.png in Resources */,
+				B1A6946F208F26A1009FF34A /* Check box@1x.png in Resources */,
 				B179DAC11FDFD5E50024400C /* Main.storyboard in Resources */,
+				B1B767E02092C67A00BD31FD /* View password@1x.png in Resources */,
+				B1308D0C21636D30004F7BBE /* Star-yellow@1x.png in Resources */,
+				B1644BBE20A53E4500971F0F /* Retry button@2x.png in Resources */,
+				4DD23C2D20A3971E00595481 /* CardCollectionViewCell.xib in Resources */,
 				B15606101FE2600900B41728 /* RewardStoreTableViewCell.xib in Resources */,
+				B11A856B20BFFCF100564E10 /* Retry btn.svg in Resources */,
+				B1E7916A20AE6FAA0008615F /* PolicyViewController.xib in Resources */,
+				B1A69475208F297B009FF34A /* Dropdown button@3x.png in Resources */,
+				B1436C9720D2053C0044259F /* Icon_qua_luu_niem@2x.png in Resources */,
+				B14ED42E207DBFA300DEFCC9 /* up.png in Resources */,
+				B1C2429D20AC229A003D42C3 /* Instruction 1@3x.png in Resources */,
 				B107B0FE1FFDD1900012029D /* Tab point.png in Resources */,
+				B16254BC209B0D770000DCFD /* Log out@3x.png in Resources */,
+				B13F445A20DB45F1004B312B /* Record card normal@1x.png in Resources */,
+				B1692AB4217DB86F00A00E62 /* Gotit 50@3x.png in Resources */,
+				B1C2429B20AC229A003D42C3 /* Instruction 2@3x.png in Resources */,
+				B13F445720DB45F1004B312B /* Record card pressed@3x.png in Resources */,
+				B13077A320D8A88000BF01CE /* Vinaphone big logo@1x.png in Resources */,
+				B1436C9520D2053C0044259F /* Icon_qua_luu_niem@1x.png in Resources */,
+				B14ED440207DCB5100DEFCC9 /* viettel_tran.png in Resources */,
+				B16254B9209B0D770000DCFD /* History@3x.png in Resources */,
+				B16254B6209B0D770000DCFD /* Lock password@2x.png in Resources */,
+				B16254C8209B0E020000DCFD /* Contract@1x.png in Resources */,
+				B16254B4209B0D770000DCFD /* Lock password@1x.png in Resources */,
+				B16254A3209B034D0000DCFD /* Avatar Male@1x.png in Resources */,
+				B1319F60215CE2CD008ADF96 /* Help@3x.png in Resources */,
+				B14ED42B207DBE7000DEFCC9 /* up16.png in Resources */,
+				B1B767E42092D32400BD31FD /* RegisterViewController.xib in Resources */,
+				B14ED42C207DBE7000DEFCC9 /* up24.png in Resources */,
+				B16254CE209B0F990000DCFD /* Profile@3x.png in Resources */,
+				B12649FF2161C626005824C1 /* ClaimHistoryViewController.xib in Resources */,
 				B125353820075DE4000B6E66 /* Retry btn@2x.svg in Resources */,
 				B1254FD81FE1114C008533BB /* GameViewController.xib in Resources */,
+				B1308D02216318DB004F7BBE /* index.html in Resources */,
+				B126819C2085AA0900EFCC59 /* rightmenuLast.png in Resources */,
+				B16254CD209B0F990000DCFD /* Profile@2x.png in Resources */,
 				B1159E3A1FFCB72F00804A59 /* Mascot.png in Resources */,
+				B1C2429920AC229A003D42C3 /* Instruction 1@2x.png in Resources */,
 				B125353320075DE4000B6E66 /* Back btn@2x.png in Resources */,
+				B16254C0209B0D770000DCFD /* Gradient Background.jpg in Resources */,
+				B1B767DA2092BEE700BD31FD /* LoginWithPhoneNumberViewController.xib in Resources */,
 				B107B0FB1FFDD1900012029D /* Forma 1.png in Resources */,
 				B156060C1FE25CBE00B41728 /* RewardStoreViewController.xib in Resources */,
+				B13F1BB520D37BED00A94057 /* Vinaphone 202 @1x.png in Resources */,
+				B13F1BBA20D37BED00A94057 /* Viettel 202 @1x.png in Resources */,
+				B16254BE209B0D770000DCFD /* Gift box@1x.png in Resources */,
+				B1644BB120A538AB00971F0F /* Score box@1x.png in Resources */,
+				B13F1BB820D37BED00A94057 /* Vinaphone 502 @3x.png in Resources */,
+				B1C2428B20AAC508003D42C3 /* Recording red dot@3x.png in Resources */,
+				B16254A1209B034D0000DCFD /* Avatar Female@2x.png in Resources */,
+				B1692AB8217DB86F00A00E62 /* Gotit 100@1x.png in Resources */,
+				B130A32520BD4E700001AE43 /* Menu button@2x.png in Resources */,
+				B1210E9D216CB12D00C2B8CC /* AboutViewController.xib in Resources */,
+				B1E7EB4D20C6723B00916CBC /* Qua_luu_niem@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +1458,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -604,21 +1483,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		57D340CCB9DE237D3B2AF06D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7ACFDB5C656EAE897429D696 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -635,21 +1499,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D454B7D4EBF206F7028ABD7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DF7B0B9DD246039EA22163E /* [CP] Embed Pods Frameworks */ = {
@@ -671,11 +1520,15 @@
 				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
 				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RKValueTransformers/RKValueTransformers.framework",
 				"${BUILT_PRODUCTS_DIR}/RestKit/RestKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SOCKit/SOCKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionKit/TransitionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -691,46 +1544,33 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKValueTransformers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RestKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SOCKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli Vui/Pods-Olli Vui-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9B3013066CCEC36053EFA1A /* [CP] Embed Pods Frameworks */ = {
+		B18CB2AC20A9267B00568906 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiTests/Pods-Olli VuiTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FAC9B936D6E788C83F139699 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olli VuiUITests/Pods-Olli VuiUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -739,24 +1579,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A69463208F21B8009FF34A /* FirstViewController.swift in Sources */,
 				B125352220074191000B6E66 /* GlowingLabel.swift in Sources */,
 				B107B0F11FFDCFF70012029D /* LoginViewController.swift in Sources */,
+				B1E7916520AD6C110008615F /* FinishRecordGameViewController.swift in Sources */,
 				B179DABE1FDFD5E50024400C /* ViewController.swift in Sources */,
+				B1515DB6208ED2AA00E93319 /* CustomLeftMenuViewController.swift in Sources */,
+				B12649FE2161C626005824C1 /* ClaimHistoryViewController.swift in Sources */,
 				B1254FD21FE0DD64008533BB /* MainSceenCollectionViewCell.swift in Sources */,
+				B13F7D012071D11E00904988 /* RecordScriptMD.swift in Sources */,
 				B12535452008B7A7000B6E66 /* HelpViewController.swift in Sources */,
+				4DD23C2C20A3971E00595481 /* CardCollectionViewCell.swift in Sources */,
 				B125351E200717D5000B6E66 /* GameMD.swift in Sources */,
 				B179DAC41FDFD5E50024400C /* Olli_Vui.xcdatamodeld in Sources */,
+				B1E7916920AE6FAA0008615F /* PolicyViewController.swift in Sources */,
+				B12681992085A2A900EFCC59 /* CustomHeaderViewViewController.swift in Sources */,
 				B179DABC1FDFD5E50024400C /* AppDelegate.swift in Sources */,
+				B15215A6209FF2920029938C /* ChangePasswordViewController.swift in Sources */,
+				B1CA024F20B4FED400326C0B /* ClaimGifViewController.swift in Sources */,
+				4D9BFEF2209FB67E00593C4D /* ProfileViewController.swift in Sources */,
+				B158E4D02084AD350069F75C /* MobileCardMD.swift in Sources */,
+				B1BF14662080BACD0006702F /* TopUpCardViewController.swift in Sources */,
+				B1BF146A2080BBD70006702F /* TopUpCardTableViewCell.swift in Sources */,
+				B1F12F74215B8C1300327147 /* JobDetailViewController.swift in Sources */,
 				B107B10720031D8F0012029D /* LoginMD.swift in Sources */,
 				B14E7960200EF68400AD266A /* Users.swift in Sources */,
+				B142C6502167411B008E2922 /* CardInformationTableViewCell.swift in Sources */,
+				B1319F59215C7419008ADF96 /* JobDetailTableViewCell.swift in Sources */,
 				B107B1051FFF879E0012029D /* Services.swift in Sources */,
+				B1E8BA6220D8FEAF006F9AF6 /* MissingPasswordViewController.swift in Sources */,
 				B156060B1FE25CBE00B41728 /* RewardStoreViewController.swift in Sources */,
+				B1210E9C216CB12D00C2B8CC /* AboutViewController.swift in Sources */,
+				B18CB2AF20A9809600568906 /* CustomPickerViewController.swift in Sources */,
+				B1264A022161C7EC005824C1 /* ClaimHistoryTableViewCell.swift in Sources */,
+				B1BF146320808C570006702F /* GiffStore.swift in Sources */,
+				B1644BCA20A57D5D00971F0F /* CardInfomationViewController.swift in Sources */,
 				B17701472011A850001DC883 /* Records.swift in Sources */,
+				4DD23C2820A3912B00595481 /* CollectionCardViewController.swift in Sources */,
 				B107B109200323880012029D /* AccountMD.swift in Sources */,
 				B1254FD71FE1114C008533BB /* GameViewController.swift in Sources */,
 				B156060F1FE2600900B41728 /* RewardStoreTableViewCell.swift in Sources */,
+				B14ED428207DB94D00DEFCC9 /* gifMD.swift in Sources */,
+				B1E7EB4620C66FAA00916CBC /* GifStoreCollectionViewCell.swift in Sources */,
 				B179DAF11FDFE04F0024400C /* MainScreenCollectionViewController.swift in Sources */,
+				B1BAA97E20A2D95400E3C658 /* Utility.swift in Sources */,
+				B1B767D92092BEE700BD31FD /* LoginWithPhoneNumberViewController.swift in Sources */,
+				B1F12F70215B6C2700327147 /* HelpFirstViewController.swift in Sources */,
 				614B2B60200BBD7500DE369E /* ServicesConstant.swift in Sources */,
+				B1B767E32092D32400BD31FD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,8 +1711,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -862,6 +1734,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.viet.voice;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -898,8 +1772,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3Y99V2NC5C;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -912,6 +1788,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.viet.voice;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -925,18 +1803,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Olli Vui/Olli Vui.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3Y99V2NC5C;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Olli Vui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.viet.voice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Olli Vui-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -947,17 +1829,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Olli Vui/Olli Vui.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y99V2NC5C;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Olli Vui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mobile.Olli-Vui";
+				PRODUCT_BUNDLE_IDENTIFIER = ai.viet.voice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Olli Vui-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

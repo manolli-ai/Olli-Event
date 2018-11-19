@@ -7,7 +7,25 @@
 		<key>Olli Vui.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>22</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B179DAB71FDFD5E50024400C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B179DACE1FDFD5E50024400C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B179DAD91FDFD5E50024400C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

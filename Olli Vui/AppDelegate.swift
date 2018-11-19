@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
-import FBSDKCoreKit
+//import FBSDKCoreKit
 import GoogleSignIn
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,25 +19,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case offline = "OFF"
         case pause = "PAU"
     }
+    var token: String = ""
+    var myPhoneNumber : String = ""
+    var myName : String = ""
+    var totalScripts = 1
+    var gender = 1
     var appstate:AppStatus = AppStatus.offline
     var window: UIWindow?
+    var user : Users = Users()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        FirebaseApp.configure()
+//        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         // Initialize sign-in
 //        var configureError: NSError?
 //        GGLContext.sharedInstance().configureWithError(&configureError)
 //        assert(configureError == nil, "Error configuring Google services: \(configureError)")
 //        GIDSignIn.sharedInstance().delegate = self
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 57/255, green: 197/255, blue: 243/255, alpha: 1)
+//        UIApplication.shared.statusBarView?.backgroundColor = UIColor.init(red: 57/255, green: 197/255, blue: 243/255, alpha: 1)
         return true
     }
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 //        let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
-        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+//        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
 //        ||
 //            GIDSignIn.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
-    }
+//    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -45,10 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        let dict : NSDictionary = ["status": "Background"]
+        NotificationCenter.default.post(name: Notification.Name("APPSTATE"), object: nil, userInfo: dict as? [AnyHashable : Any])
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        let dict: NSDictionary = ["status": "Foreground"]
+        NotificationCenter.default.post(name: Notification.Name("APPSTATE"), object: nil, userInfo: dict as? [AnyHashable : Any])
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

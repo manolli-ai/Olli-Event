@@ -27,7 +27,7 @@ class RecordConnector  {
             print("Failed")
         }
     }
-    func AddRecord(record:NSArray, user: Users) {
+    func AddRecord(record:NSArray) {//, user: Users) {
         let context = appDelegate.persistentContainer.viewContext
         let entityRecord = NSEntityDescription.entity(forEntityName: "Records", in: context)
         
@@ -43,7 +43,7 @@ class RecordConnector  {
                 newRecord.setValue((($0 as! Dictionary<String, Any>)["status"] as! Dictionary<String,Any>)["label"], forKey: "label")
                 newRecord.setValue((($0 as! Dictionary<String, Any>)["status"] as! Dictionary<String,Any>)["value"], forKey: "value")
                 newRecord.setValue((($0 as! Dictionary<String, Any>)["status"] as! Dictionary<String,Any>)["style"], forKey: "style")
-                newRecord.setValue(user, forKey: "user")
+//                newRecord.setValue(user, forKey: "user")
             }
         }
         do {
